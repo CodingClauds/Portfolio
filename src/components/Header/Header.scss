@@ -1,0 +1,22 @@
+.portfolio {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem;
+    width: fit-content;
+    color: black;
+    border: 1px solid red;
+  }
+}
+
+.header {
+  color: black;
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid red;
+  }
+}
