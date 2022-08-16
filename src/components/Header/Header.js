@@ -1,26 +1,31 @@
 import React from "react";
 import "./Header.scss";
+// import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>
-      <header className="portfolio">
-        <div className="portfolio__header">
+      <header>
+        <div className="container">
           <a href="/">
-            <h1 id="portfolio-title">Claudio Miranda</h1>
+            <h2>Claudio Miranda</h2>
           </a>
-        </div>
-
-        <div className="header">
-          <nav className="header__nav">
-            <ul className="header__nav-list">
-              <li className="header__nav-item">About Me</li>
-              <li className="header__nav-item">Projects</li>
-              <li className="header__nav-item">Contact</li>
-            </ul>
+          <nav>
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
           </nav>
+          <button className="hamburger">
+            <div className="bar"></div>
+          </button>
         </div>
       </header>
+
+      <nav className="mobile-nav">
+        <a href="#">About Me</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
     </>
   );
 }
