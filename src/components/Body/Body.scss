@@ -42,7 +42,7 @@ main {
 
       h3 {
         font-size: 36px;
-        font-weight: 400;
+        font-weight: 700;
         margin-bottom: 32px;
 
         @media (max-width: 767px) {
@@ -50,14 +50,66 @@ main {
         }
       }
     }
+
+    .wrapper {
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+
+      &__title {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 60px;
+        letter-spacing: 1px;
+      }
+
+      &__rotate-text::before {
+        content: "";
+        animation: animate infinite 7s;
+      }
+      @keyframes animate {
+        0% {
+          content: "Develop!";
+        }
+        30% {
+          content: "Create!";
+        }
+        60% {
+          content: "Design!";
+        }
+        100% {
+          content: "Think!";
+        }
+      }
+    }
   }
 
-  .services {
+  .about {
     background-color: #eee;
+    display: flex;
+    justify-content: center;
 
-    .container {
+    &__content {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__description {
+    }
+
+    &__profile-img {
+      // position: relative;
+      // top: 4rem;
+      // left: 15rem;
+      border-radius: 50%;
+    }
+
+    &__container {
       padding-top: 64px;
       padding-bottom: 64px;
+      max-width: 1400px;
 
       .services-grid {
         display: grid;
@@ -81,7 +133,7 @@ main {
           .img-box {
             display: block;
             width: 100%;
-            border-bottom: 5px solid #ff9fdb;
+            border-bottom: 5px solid #9feaff;
 
             .img {
               display: block;
@@ -100,6 +152,7 @@ main {
   }
 
   .projects {
+    background-color: rgb(133, 138, 208);
     padding-top: 64px;
     padding-bottom: 64px;
 
@@ -123,11 +176,17 @@ main {
         overflow: hidden;
 
         .content {
-          opacity: 0;
+          filter: grayscale(1);
+          transition: 0.4s;
           color: #fff;
           padding: 16px;
-          background-color: rgba(64, 39, 68, 0.8);
-          transition: 0.4s;
+          background-color: rgba(24, 195, 172, 0.8);
+
+          // &__1 {
+          //   background: no-repeat;
+          //   background-image: url(../../assets/images/maesurf.png);
+          //   background-size: 100%;
+          // }
 
           h3 {
             font-size: 32px;
@@ -150,7 +209,7 @@ main {
 
         &:hover {
           .content {
-            opacity: 1;
+            filter: grayscale(0);
           }
         }
       }
