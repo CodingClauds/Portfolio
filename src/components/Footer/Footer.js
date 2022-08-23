@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.scss";
 
-export default function Footer() {
+export default function Footer({ myRefContact }) {
   return (
     <>
-      <section className="contact" id="contact">
+      <section className="contact" id="contact" ref={myRefContact}>
         <div className="container">
           <h2>Contact</h2>
 
@@ -37,7 +37,6 @@ export default function Footer() {
           </form>
         </div>
       </section>
-      ;
     </>
   );
 }
