@@ -13,7 +13,7 @@ import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
 // import AxiosIcon from "../../assets/images/techstack/axios.svg";
 // import NpmIcon from "../../assets/images/techstack/npm.svg";
 
-export default function Body() {
+export default function Body({ myRef, myRefProjects }) {
   return (
     <>
       <main>
@@ -46,7 +46,7 @@ export default function Body() {
           </div>
         </section>
 
-        <section className="about" id="about-me">
+        <section className="about" id="about-me" ref={myRef}>
           <div className="about__container">
             <h2 className="about__title-hello">Hey There!</h2>
 
@@ -131,7 +131,7 @@ export default function Body() {
           </div>
         </section>
 
-        <section className="projects" id="projects">
+        <section className="projects" id="projects" ref={myRefProjects}>
           <div className="container">
             <h2>Projects</h2>
 
