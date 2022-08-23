@@ -2,6 +2,17 @@ import React from "react";
 import "./Body.scss";
 import Me from "../../assets/images/BSTN-May-2022-Toront-CT-Headshot-31.jpg";
 
+import ReactIcon from "../../assets/images/techstack/react.svg";
+import HtmlIcon from "../../assets/images/techstack/html5.svg";
+import CssIcon from "../../assets/images/techstack/css3.svg";
+import SassIcon from "../../assets/images/techstack/sass.svg";
+import JsIcon from "../../assets/images/techstack/javascript.svg";
+import FirebaseIcon from "../../assets/images/techstack/firebase.png";
+import GithubIcon from "../../assets/images/techstack/github.svg";
+import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
+// import AxiosIcon from "../../assets/images/techstack/axios.svg";
+// import NpmIcon from "../../assets/images/techstack/npm.svg";
+
 export default function Body() {
   return (
     <>
@@ -68,75 +79,53 @@ export default function Body() {
 
             <div className="services-grid">
               <div className="service">
-                <figure className="img-box">
-                  <img
-                    src="./assets/images/service-1.jpg"
-                    alt="Website Service"
-                    className="img"
-                  />
-                </figure>
-                <div className="content">
-                  <h3>Websites</h3>
-                  {/* <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Officiis beatae, cumque mollitia laudantium fugiat
-                    perspiciatis saepe. Delectus praesentium numquam quas?
-                  </p> */}
-                </div>
+                <img src={ReactIcon} alt="React badge image" className="img" />
+              </div>
+              <div className="service">
+                <img src={HtmlIcon} alt="HTML badge image" className="img" />
               </div>
 
               <div className="service">
-                <figure className="img-box">
-                  <img
-                    src="./assets/images/service-2.jpg"
-                    alt="App Service"
-                    className="img"
-                  />
-                </figure>
-                <div className="content">
-                  <h3>Apps</h3>
-                  {/* <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Officiis beatae, cumque mollitia laudantium fugiat
-                    perspiciatis saepe. Delectus praesentium numquam quas?
-                  </p> */}
-                </div>
+                <img src={CssIcon} alt="CSS badge image" className="img" />
               </div>
 
               <div className="service">
-                <figure className="img-box">
-                  <img
-                    src="./assets/images/service-3.jpg"
-                    alt="Games Service"
-                    className="img"
-                  />
-                </figure>
-                <div className="content">
-                  <h3>Games</h3>
-                  {/* <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Officiis beatae, cumque mollitia laudantium fugiat
-                    perspiciatis saepe. Delectus praesentium numquam quas?
-                  </p> */}
-                </div>
+                <img
+                  src={JsIcon}
+                  alt="Javascript badge image"
+                  className="img"
+                />
               </div>
 
               <div className="service">
-                <figure className="img-box">
-                  <img
-                    src="./assets/images/service-4.jpg"
-                    alt="Mentoring Service"
-                    className="img"
-                  />
-                </figure>
-                <div className="content">
-                  <h3>Mentoring</h3>
-                  {/* <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Officiis beatae, cumque mollitia laudantium fugiat
-                    perspiciatis saepe. Delectus praesentium numquam quas?
-                  </p> */}
-                </div>
+                <img src={SassIcon} alt="Sass badge image" className="img" />
+              </div>
+              <div className="service">
+                <img
+                  src={FirebaseIcon}
+                  alt="Firebase badge image"
+                  className="img"
+                />
+              </div>
+
+              <div className="service">
+                <img
+                  src={GithubIcon}
+                  alt="Github badge image"
+                  className="img"
+                />
+              </div>
+
+              <div className="service">
+                <img
+                  src={RouterIcon}
+                  alt="Github badge image"
+                  className="img"
+                />
+              </div>
+
+              <div className="service">
+                {/* <img src={AxiosIcon} alt="Github badge image" className="img" /> */}
               </div>
             </div>
           </div>
