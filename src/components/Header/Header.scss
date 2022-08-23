@@ -34,7 +34,6 @@ a {
   display: block;
   width: 35px;
   cursor: pointer;
-
   appearance: none;
   background: none;
   outline: none;
@@ -42,23 +41,23 @@ a {
 }
 
 .hamburger .bar,
-.hamburger:after,
-.hamburger:before {
+.hamburger:before,
+.hamburger:after {
   content: "";
   display: block;
   width: 100%;
   height: 5px;
   background-color: #000;
-  border-radius: 5px;
   margin: 6px 0px;
   transition: 0.4s;
+  border-radius: 5px;
 }
 
-.hamburger.is-active:before {
+.hamburger.is-active::before {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
 
-.hamburger.is-active:after {
+.hamburger.is-active::after {
   transform: rotate(45deg) translate(-9px, -8px);
 }
 
@@ -67,36 +66,39 @@ a {
 }
 
 .mobile-nav {
+  display: block;
   position: fixed;
   top: 0;
   left: 100%;
   width: 100%;
   min-height: 100vh;
-  display: block;
-  z-index: 98;
+  z-index: 99;
   background-color: #12002f;
   padding-top: 120px;
   transition: 0.4s;
 }
 
-.mobile-nav.is-active {
+.mobile-nav {
   left: 0;
 }
 
-.mobile-nav a {
+.mobile-link {
   display: block;
   width: 100%;
   max-width: 200px;
   margin: 0 auto 16px;
   text-align: center;
   padding: 12px 16px;
-  background-color: #1f103f;
+  // background-color: #595cb0;
+  background-color: #12002f;
 
   color: #fff;
 }
 
-.mobile-nav a:hover {
-  background-color: #24104f;
+.mobile-link:hover {
+  // background-color: #12002f;
+  background-color: #595cb0;
+  transition: 0.8s ease-in;
 }
 
 @media (min-width: 768px) {
@@ -151,7 +153,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 100;
   background-color: #12002f;
 
   .container {
