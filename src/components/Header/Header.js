@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Component, useRef, useEffect } from "react";
+// import { render } from "react-dom";
 import "./Header.scss";
-// import { Link } from "react-router-dom";
+import "../Body/Body.js";
 
-function Header() {
+function Header({ executeScroll, myRef, myRefProjects, myRefContact }) {
+  // Hamburger Menu Functionality
   window.onload = function () {
     window.addEventListener("scroll", function (e) {
       if (window.pageYOffset > 100) {
@@ -12,12 +14,15 @@ function Header() {
       }
     });
 
-    const menu__btn = document.querySelector(".hamburger");
+    const menu_button = document.querySelector(".hamburger");
+    const mobile_menu = document.querySelector(".mobile-nav");
 
-    menu__btn.addEventListener("click", function () {
-      menu__btn.classList.toggle("is-active");
+    menu_button.addEventListener("click", function () {
+      menu_button.classList.toggle("is-active");
+      mobile_menu.classList.toggle("is-active");
     });
   };
+
   return (
     <>
       <header>
@@ -26,9 +31,15 @@ function Header() {
             <h2>Claudio Miranda</h2>
           </a>
           <nav>
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <span onClick={() => executeScroll(myRef)} href="about-me">
+              About
+            </span>
+            <span onClick={() => executeScroll(myRefProjects)} href="projects">
+              Projects
+            </span>
+            <span onClick={() => executeScroll(myRefContact)} href="contact">
+              Contact
+            </span>
           </nav>
           <button className="hamburger">
             <div className="bar"></div>
@@ -37,13 +48,13 @@ function Header() {
       </header>
 
       <nav className="mobile-nav">
-        <a className="mobile-link" href="#">
+        <a className="mobile-navlink" href="#">
           About
         </a>
-        <a className="mobile-link" href="#">
+        <a className="mobile-navlink" href="#">
           Projects
         </a>
-        <a className="mobile-link" href="#">
+        <a className="mobile-navlink" href="#">
           Contact
         </a>
       </nav>
