@@ -35,3 +35,24 @@ html {
     padding-right: 32px;
   }
 }
+
+.button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+  background-color: skyblue;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-weight: 700;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
