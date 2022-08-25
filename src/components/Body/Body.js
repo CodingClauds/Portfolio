@@ -30,10 +30,6 @@ export default function Body({ myRefAbout, myRefProjects }) {
                 Let's <span className="infinite__rotate-text"></span>
               </h3>
             </div>
-
-            <a href="#" className="button">
-              Find out more
-            </a>
           </div>
         </section>
 
