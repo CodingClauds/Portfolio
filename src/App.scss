@@ -6,14 +6,32 @@
   box-sizing: border-box;
 
   font-family: "Fira Sans", sans-serif;
+  // font-family: "Work Sans", sans-serif;
 }
 
 span {
-  color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+
+  @media (max-width: 1024px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }

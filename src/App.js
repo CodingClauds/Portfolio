@@ -8,7 +8,7 @@ import { useRef } from "react";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
-  const myRef = useRef(null);
+  const myRefAbout = useRef(null);
   const myRefProjects = useRef(null);
   const myRefContact = useRef(null);
 
@@ -18,12 +18,12 @@ function App() {
   return (
     <>
       <Header
-        myRef={myRef}
+        myRefAbout={myRefAbout}
         myRefProjects={myRefProjects}
         myRefContact={myRefContact}
         executeScroll={executeScroll}
       />
-      <Body myRef={myRef} myRefProjects={myRefProjects} />
+      <Body myRefAbout={myRefAbout} myRefProjects={myRefProjects} />
       <Footer myRefContact={myRefContact} />
     </>
   );
