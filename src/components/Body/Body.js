@@ -13,32 +13,23 @@ import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
 // import AxiosIcon from "../../assets/images/techstack/axios.svg";
 // import NpmIcon from "../../assets/images/techstack/npm.svg";
 
-export default function Body({ myRef, myRefProjects }) {
+export default function Body({ myRefAbout, myRefProjects }) {
   return (
     <>
       <main>
         <section className="banner">
-          <div className="container">
+          <div className="container wrapper">
             <h1>
-              Websites you're <br className="hide-mob" />
+              Websites you're <br />
               <span>not afraid</span> to share
             </h1>
 
             {/* <h3>Solutions for all your needs</h3> */}
-            <div className="wrapper">
-              <h3 className="wrapper__title">
-                Let's <span className="wrapper__rotate-text"></span>
+            <div className="infinite">
+              <h3 className="infinite__title">
+                Let's <span className="infinite__rotate-text"></span>
               </h3>
             </div>
-
-            {/* <h1>
-              <span>always be</span>
-              <div class="message">
-                <div class="word1">close</div>
-                <div class="word2">code</div>
-                <div class="word3">creating</div>
-              </div>
-            </h1> */}
 
             <a href="#" className="button">
               Find out more
@@ -46,7 +37,7 @@ export default function Body({ myRef, myRefProjects }) {
           </div>
         </section>
 
-        <section className="about" id="about-me" ref={myRef}>
+        <section className="about" id="about-me" ref={myRefAbout}>
           <div className="about__container">
             <h2 className="about__title-hello">Hey There!</h2>
 
@@ -131,7 +122,7 @@ export default function Body({ myRef, myRefProjects }) {
           </div>
         </section>
 
-        <section className="projects" id="projects" ref={myRefProjects}>
+        <section className="projects wrapper" id="projects" ref={myRefProjects}>
           <div className="container">
             <h2>Projects</h2>
 
