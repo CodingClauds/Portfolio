@@ -1,18 +1,90 @@
-.container {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-left: 128px;
-  padding-right: 128px;
+  z-index: 100;
+  background-color: #fff;
 
-  @media (max-width: 1024px) {
-    padding-left: 64px;
-    padding-right: 64px;
+  .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+    h2 {
+      // color: black;
+      // text-transform: uppercase;
+      // font-size: 32px;
+      // font-weight: 900;
+      // letter-spacing: -1.8px;
+      // word-spacing: -4px;
+
+      color: black;
+      text-transform: uppercase;
+      font-size: 35px;
+      font-weight: 300;
+      letter-spacing: -2.5px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    nav {
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      a {
+        color: black;
+        font-size: 20px;
+      }
+    }
   }
 
-  @media (max-width: 767px) {
-    padding-left: 32px;
-    padding-right: 32px;
+  .nav-link {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    padding-bottom: 1rem;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  /* stroke */
+  nav ul li span {
+    position: relative;
+  }
+  nav ul li span:after {
+    content: ".";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    height: 3px;
+    color: transparent;
+    background: rgb(80, 86, 176);
+    transition: all 0.5s;
+  }
+  nav ul li span:hover:after {
+    width: 100%;
+  }
+
+  &.is-scrolling {
+    background-color: #12002f;
+    .container {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
   }
 }
 
@@ -127,64 +199,5 @@ section {
 
   @media (max-width: 767px) {
     font-size: 18px;
-  }
-}
-
-img {
-  max-width: 100%;
-}
-
-header {
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background-color: #12002f;
-
-  .container {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-
-    h2 {
-      color: black;
-      text-transform: uppercase;
-      font-size: 32px;
-      font-weight: 900;
-      letter-spacing: -1.8px;
-      word-spacing: -4px;
-
-      span {
-        font-weight: 600;
-      }
-    }
-
-    nav {
-      display: grid;
-      grid-gap: 16px;
-      grid-template-columns: repeat(4, auto);
-
-      @media (max-width: 767px) {
-        display: none;
-      }
-
-      a {
-        color: black;
-        font-size: 20px;
-      }
-    }
-  }
-
-  &.is-scrolling {
-    background-color: #12002f;
-    .container {
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
   }
 }

@@ -1,9 +1,7 @@
-import React, { Component, useRef, useEffect } from "react";
-// import { render } from "react-dom";
 import "./Header.scss";
 import "../Body/Body.js";
 
-function Header({ executeScroll, myRef, myRefProjects, myRefContact }) {
+function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
   // Hamburger Menu Functionality
   window.onload = function () {
     window.addEventListener("scroll", function (e) {
@@ -26,20 +24,40 @@ function Header({ executeScroll, myRef, myRefProjects, myRefContact }) {
   return (
     <>
       <header>
-        <div className="container">
+        <div className="container wrapper">
           <a href="/">
             <h2>Claudio Miranda</h2>
           </a>
           <nav>
-            <span onClick={() => executeScroll(myRef)} href="about-me">
-              About
-            </span>
-            <span onClick={() => executeScroll(myRefProjects)} href="projects">
-              Projects
-            </span>
-            <span onClick={() => executeScroll(myRefContact)} href="contact">
-              Contact
-            </span>
+            <ul>
+              <li>
+                <span
+                  className="nav-link"
+                  onClick={() => executeScroll(myRefAbout)}
+                  href="about-me"
+                >
+                  About
+                </span>
+              </li>
+              <li>
+                <span
+                  className="nav-link"
+                  onClick={() => executeScroll(myRefProjects)}
+                  href="projects"
+                >
+                  Projects
+                </span>
+              </li>
+              <li>
+                <span
+                  className="nav-link"
+                  onClick={() => executeScroll(myRefContact)}
+                  href="contact"
+                >
+                  Contact
+                </span>
+              </li>
+            </ul>
           </nav>
           <button className="hamburger">
             <div className="bar"></div>
@@ -48,15 +66,23 @@ function Header({ executeScroll, myRef, myRefProjects, myRefContact }) {
       </header>
 
       <nav className="mobile-nav">
-        <a className="mobile-navlink" href="#">
-          About
-        </a>
-        <a className="mobile-navlink" href="#">
-          Projects
-        </a>
-        <a className="mobile-navlink" href="#">
-          Contact
-        </a>
+        <ul>
+          <li>
+            <a className="mobile-navlink" href="#">
+              About
+            </a>
+          </li>
+          <li>
+            <a className="mobile-navlink" href="#">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a className="mobile-navlink" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
       </nav>
     </>
   );
