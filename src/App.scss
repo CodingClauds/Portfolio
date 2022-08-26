@@ -11,7 +11,6 @@
 
 span {
   text-decoration: none;
-  cursor: pointer;
 }
 
 html {
@@ -33,6 +32,16 @@ html {
   @media (max-width: 767px) {
     padding-left: 32px;
     padding-right: 32px;
+  }
+}
+
+section {
+  h2 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #313131;
+    font-size: 36px;
+    font-weight: 300;
   }
 }
 
