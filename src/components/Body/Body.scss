@@ -87,121 +87,135 @@ main {
 
     &__container {
       margin: 5rem;
-      padding-top: 64px;
       padding-bottom: 64px;
       max-width: 1400px;
     }
 
     &__content {
       display: flex;
-      justify-content: space-around;
-    }
-    // &__content-text {}
-    // &__description {}
+      justify-content: space-between;
+      gap: 1rem;
 
-    // &__profile {}
+      &--text {
+        width: 50%;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+    }
+
+    &__description {
+      line-height: 1.8;
+    }
+
+    &__profile {
+      width: 40%;
+      position: relative;
+      top: 5rem;
+      left: 5rem;
+    }
 
     // profile image
-    &__mugshot {
+    &__headshot {
       border-radius: 50%;
-      max-width: 80%;
-    }
-
-    .techstack {
-      &__icon {
-        width: 100%;
-      }
-    }
-
-    .services-grid {
-      margin-top: 5rem;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-gap: 16px;
-
-      @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      @media (max-width: 767px) {
-        grid-template-columns: 1fr;
-      }
-
-      .service {
-        overflow: hidden;
-        max-width: 40%;
-
-        &__spacer {
-          min-height: 25px;
-        }
-      }
-
-      .content {
-        padding: 16px;
-      }
+      width: 20rem;
     }
   }
 
-  .projects {
-    background-color: rgb(133, 138, 208);
-    padding-top: 64px;
-    padding-bottom: 64px;
+  .techstack {
+    margin-top: 10rem;
+    &__icon {
+      width: 100%;
+    }
+  }
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 16px;
-      margin-bottom: 32px;
+  .services-grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px;
 
-      @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+
+    .service {
+      overflow: hidden;
+      max-width: 40%;
+
+      &__spacer {
+        min-height: 25px;
       }
+    }
 
-      @media (max-width: 767px) {
-        grid-template-columns: 1fr;
-      }
+    .content {
+      padding: 16px;
+    }
+  }
+}
 
-      .project {
-        // background-image: url("../images/project-img.jpg");
-        border-radius: 16px;
-        overflow: hidden;
+.projects {
+  background-color: rgb(133, 138, 208);
+  padding-top: 64px;
+  padding-bottom: 64px;
 
-        .content {
-          filter: grayscale(1);
-          transition: 0.4s;
-          color: #fff;
-          padding: 16px;
-          background-color: rgba(24, 195, 172, 0.8);
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px;
 
-          // &__1 {
-          //   background: no-repeat;
-          //   background-image: url(../../assets/images/maesurf.png);
-          //   background-size: 100%;
-          // }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-          h3 {
-            font-size: 32px;
-            margin-bottom: 16px;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
 
-            @media (max-width: 1024px) {
-              font-size: 28px;
-            }
-          }
+    .project {
+      // background-image: url("../images/project-img.jpg");
+      border-radius: 16px;
+      overflow: hidden;
 
-          p {
-            font-size: 18px;
-            margin-bottom: 16px;
+      .content {
+        filter: grayscale(1);
+        transition: 0.4s;
+        color: #fff;
+        padding: 16px;
+        background-color: rgba(24, 195, 172, 0.8);
 
-            @media (max-width: 1024px) {
-              font-size: 16px;
-            }
+        // &__1 {
+        //   background: no-repeat;
+        //   background-image: url(../../assets/images/maesurf.png);
+        //   background-size: 100%;
+        // }
+
+        h3 {
+          font-size: 32px;
+          margin-bottom: 16px;
+
+          @media (max-width: 1024px) {
+            font-size: 28px;
           }
         }
 
-        &:hover {
-          .content {
-            filter: grayscale(0);
+        p {
+          font-size: 18px;
+          margin-bottom: 16px;
+
+          @media (max-width: 1024px) {
+            font-size: 16px;
           }
+        }
+      }
+
+      &:hover {
+        .content {
+          filter: grayscale(0);
         }
       }
     }

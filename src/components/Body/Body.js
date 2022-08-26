@@ -35,7 +35,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
         <section className="about" id="about-me" ref={myRefAbout}>
           <div className="about__container">
             <div className="about__content">
-              <div className="about__content-text">
+              <div className="about__content--text">
                 <p className="about__description">
                   Hello, my name is Claudio Miranda! Originally a registered
                   Tool-Maker in the automotive sector, now turned Front-End
@@ -53,7 +53,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
               </div>
               <div className="about__profile">
                 <img
-                  className="about__mugshot"
+                  className="about__headshot"
                   src={Me}
                   alt="profile headshot"
                 />
