@@ -10,8 +10,8 @@ import JsIcon from "../../assets/images/techstack/javascript.svg";
 import FirebaseIcon from "../../assets/images/techstack/firebase.png";
 import GithubIcon from "../../assets/images/techstack/github.svg";
 import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
-// import AxiosIcon from "../../assets/images/techstack/axios.svg";
-// import NpmIcon from "../../assets/images/techstack/npm.svg";
+import AxiosIcon from "../../assets/images/techstack/axios-ar21.svg";
+import NpmIcon from "../../assets/images/techstack/npm.svg";
 
 export default function Body({ myRefAbout, myRefProjects }) {
   return (
@@ -24,7 +24,6 @@ export default function Body({ myRefAbout, myRefProjects }) {
               <span>not afraid</span> to share
             </h1>
 
-            {/* <h3>Solutions for all your needs</h3> */}
             <div className="infinite">
               <h3 className="infinite__title">
                 Let's <span className="infinite__rotate-text"></span>
@@ -35,84 +34,113 @@ export default function Body({ myRefAbout, myRefProjects }) {
 
         <section className="about" id="about-me" ref={myRefAbout}>
           <div className="about__container">
-            <h2 className="about__title-hello">Hey There!</h2>
-
-            <h2 className="about__title-myname">My Name's Claudio</h2>
-
             <div className="about__content">
               <div className="about__content-text">
                 <p className="about__description">
-                  Originally a journeyman Tool-Maker in the automotive sector,
-                  now turned Front-End Developer. Focusing my skills to better
-                  the tech community around us and leverage my past experiences
-                  into my current role. Pivoting from my past career in
-                  automation to web development, I was inspired by the tech
-                  industry for its level of attention to inclusivity and working
-                  closely with passion. I thrive in group environments and enjoy
-                  the energy that comes from collaboration. Looking to focus
-                  more on what drives me, lets drive down some code! 🚗
+                  Hello, my name is Claudio Miranda! Originally a registered
+                  Tool-Maker in the automotive sector, now turned Front-End
+                  Developer. Decided to pivot and focus myself and my passion
+                  around what matters most, while still leveraging my past
+                  experiences forward. My past career was specific in automation
+                  and robotics where I first caught wind of coding and seeing
+                  the endless possiblities.
+                  <br />I was inspired by the tech industry for its level of
+                  attention to inclusivity and working closely with ones
+                  passion. I thrive in group environments and enjoy the energy
+                  that comes from collaboration. I'm looking forward to what
+                  drives me, reach out and let's power through some code!
                 </p>
-
-                <h3 className="about__cta">lets get coding!</h3>
               </div>
-              <div className="about__content-img">
+              <div className="about__profile">
                 <img
-                  className="about__profile-img"
+                  className="about__mugshot"
                   src={Me}
-                  alt="profile photo"
+                  alt="profile headshot"
                 />
               </div>
             </div>
 
-            <div className="services-grid">
-              <div className="service">
-                <img src={ReactIcon} alt="React badge image" className="img" />
-              </div>
-              <div className="service">
-                <img src={HtmlIcon} alt="HTML badge image" className="img" />
-              </div>
+            <div className="techstack">
+              <h2 className="techstack__title">tech stack:</h2>
+              <div className="services-grid">
+                <div className="techstack service">
+                  <img
+                    src={ReactIcon}
+                    alt="react badge"
+                    className="techstack__icon"
+                  />
+                </div>
+                <div className="service">
+                  <img
+                    src={HtmlIcon}
+                    alt="html badge"
+                    className="techstack__icon"
+                  />
+                </div>
 
-              <div className="service">
-                <img src={CssIcon} alt="CSS badge image" className="img" />
-              </div>
+                <div className="service">
+                  <img
+                    src={CssIcon}
+                    alt="css badge"
+                    className="techstack__icon"
+                  />
+                </div>
 
-              <div className="service">
-                <img
-                  src={JsIcon}
-                  alt="Javascript badge image"
-                  className="img"
-                />
-              </div>
+                <div className="service">
+                  <img
+                    src={JsIcon}
+                    alt="javascript badge"
+                    className="techstack__icon"
+                  />
+                </div>
 
-              <div className="service">
-                <img src={SassIcon} alt="Sass badge image" className="img" />
-              </div>
-              <div className="service">
-                <img
-                  src={FirebaseIcon}
-                  alt="Firebase badge image"
-                  className="img"
-                />
-              </div>
+                <div className="service">
+                  <img
+                    src={SassIcon}
+                    alt="sass badge"
+                    className="techstack__icon"
+                  />
+                </div>
+                <div className="service">
+                  <img
+                    src={FirebaseIcon}
+                    alt="firebase badge"
+                    className="techstack__icon"
+                  />
+                </div>
 
-              <div className="service">
-                <img
-                  src={GithubIcon}
-                  alt="Github badge image"
-                  className="img"
-                />
-              </div>
+                <div className="service">
+                  <img
+                    src={NpmIcon}
+                    alt="npm badge"
+                    className="techstack__icon"
+                  />
+                </div>
 
-              <div className="service">
-                <img
-                  src={RouterIcon}
-                  alt="Github badge image"
-                  className="img"
-                />
-              </div>
+                <div className="service">
+                  <div className="service__spacer"></div>
+                  <img
+                    src={RouterIcon}
+                    alt="react router badge"
+                    className="techstack__icon"
+                  />
+                </div>
 
-              <div className="service">
-                {/* <img src={AxiosIcon} alt="Github badge image" className="img" /> */}
+                <div className="service">
+                  <div className="service__spacer"></div>
+                  <img
+                    src={AxiosIcon}
+                    alt="axios badge"
+                    className="techstack__icon"
+                  />
+                </div>
+                <div className="service">
+                  <img
+                    src={GithubIcon}
+                    alt="github badge"
+                    className="techstack__icon"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -136,6 +164,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     functionalities to help attract clients and traffic to the
                     site.
                   </p>
+
                   <a href="https://maesurf.com/" className="button">
                     Learn more
                   </a>
@@ -154,9 +183,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     visually appealing app to help those making habits fun.
                   </p>
 
-                  <a href="#" className="button">
-                    Learn more
-                  </a>
+                  <a className="button">Learn more</a>
                 </div>
               </div>
               <div className="project">
@@ -164,8 +191,9 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   <h3>Horoscoped</h3>
                   <p>
                     For one of our "mini-hackathons" we created a Horoscope app
-                    that utilizes API’s (through the use of axios) to retrieve
-                    data when an individual user inputs their specific birthday.
+                    that utilizes API’s to retrieve data when an individual user
+                    inputs their specific birthday.
+                    <br />
                     As such it will return one of the 12 astrological signs and
                     a quote that is randomly generated from the API. We also
                     included a date/time API.
@@ -183,9 +211,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     Dolores, mollitia voluptas dolore reprehenderit nulla
                     consectetur ipsa accusantium facilis! Cumque, voluptate!
                   </p>
-                  <a href="#" className="button">
-                    Learn more
-                  </a>
+                  <a className="button">Learn more</a>
                 </div>
               </div>
               <div className="project">
@@ -196,9 +222,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     Dolores, mollitia voluptas dolore reprehenderit nulla
                     consectetur ipsa accusantium facilis! Cumque, voluptate!
                   </p>
-                  <a href="#" className="button">
-                    Learn more
-                  </a>
+                  <a className="button">Learn more</a>
                 </div>
               </div>
               <div className="project">
@@ -209,16 +233,13 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     Dolores, mollitia voluptas dolore reprehenderit nulla
                     consectetur ipsa accusantium facilis! Cumque, voluptate!
                   </p>
-                  <a href="#" className="button">
-                    Learn more
-                  </a>
+                  <a className="button">Learn more</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </main>
-      {/* <script src="./assets/js/main.js"></script> */}
     </>
   );
 }
