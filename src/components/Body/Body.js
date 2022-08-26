@@ -63,7 +63,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
             <div className="techstack">
               <h2 className="techstack__title">tech stack:</h2>
               <div className="services-grid">
-                <div className="techstack service">
+                <div className="service">
                   <img
                     src={ReactIcon}
                     alt="react badge"
