@@ -37,13 +37,13 @@ export default function Body({ myRefAbout, myRefProjects }) {
             <div className="about__content">
               <div className="about__content--text">
                 <p className="about__description">
-                  Hello, my name is Claudio Miranda! Originally a registered
-                  Tool-Maker in the automotive sector, now turned Front-End
-                  Developer. Decided to pivot and focus myself and my passion
-                  around what matters most, while still leveraging my past
-                  experiences forward. My past career was specific in automation
-                  and robotics where I first caught wind of coding and seeing
-                  the endless possiblities.
+                  Hello, my name is Claudio! Originally a registered tool-maker
+                  in the automotive sector, now turned front-end developer.
+                  Decided to pivot and focus myself and my passion around what
+                  matters most, while still leveraging my past experiences
+                  forward. My past career was specific in automation and
+                  robotics where I first caught wind of coding and seeing the
+                  endless possiblities.
                   <br />I was inspired by the tech industry for its level of
                   attention to inclusivity and working closely with ones
                   passion. I thrive in group environments and enjoy the energy
@@ -62,15 +62,15 @@ export default function Body({ myRefAbout, myRefProjects }) {
 
             <div className="techstack">
               <h2 className="techstack__title">tech stack:</h2>
-              <div className="services-grid">
-                <div className="service">
+              <div className="techstack__services-grid">
+                <div className="techstack__service">
                   <img
                     src={ReactIcon}
                     alt="react badge"
                     className="techstack__icon"
                   />
                 </div>
-                <div className="service">
+                <div className="techstack__service">
                   <img
                     src={HtmlIcon}
                     alt="html badge"
@@ -78,7 +78,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   />
                 </div>
 
-                <div className="service">
+                <div className="techstack__service">
                   <img
                     src={CssIcon}
                     alt="css badge"
@@ -86,7 +86,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   />
                 </div>
 
-                <div className="service">
+                <div className="techstack__service">
                   <img
                     src={JsIcon}
                     alt="javascript badge"
@@ -94,14 +94,14 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   />
                 </div>
 
-                <div className="service">
+                <div className="techstack__service">
                   <img
                     src={SassIcon}
                     alt="sass badge"
                     className="techstack__icon"
                   />
                 </div>
-                <div className="service">
+                <div className="techstack__service">
                   <img
                     src={FirebaseIcon}
                     alt="firebase badge"
@@ -109,7 +109,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   />
                 </div>
 
-                <div className="service">
+                <div className="techstack__service">
                   <img
                     src={NpmIcon}
                     alt="npm badge"
@@ -117,8 +117,8 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   />
                 </div>
 
-                <div className="service">
-                  <div className="service__spacer"></div>
+                <div className="techstack__service">
+                  <div className="techstack__spacer"></div>
                   <img
                     src={RouterIcon}
                     alt="react router badge"
@@ -126,15 +126,15 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   />
                 </div>
 
-                <div className="service">
-                  <div className="service__spacer"></div>
+                <div className="techstack__service">
+                  <div className="techstack__spacer"></div>
                   <img
                     src={AxiosIcon}
                     alt="axios badge"
                     className="techstack__icon"
                   />
                 </div>
-                <div className="service">
+                <div className="techstack__service">
                   <img
                     src={GithubIcon}
                     alt="github badge"
