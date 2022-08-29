@@ -10,7 +10,7 @@ import JsIcon from "../../assets/images/techstack/javascript.svg";
 import FirebaseIcon from "../../assets/images/techstack/firebase.png";
 import GithubIcon from "../../assets/images/techstack/github.svg";
 import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
-import AxiosIcon from "../../assets/images/techstack/axios-ar21.svg";
+import AxiosIcon from "../../assets/images/techstack/axios.svg";
 import NpmIcon from "../../assets/images/techstack/npm.svg";
 
 export default function Body({ myRefAbout, myRefProjects }) {
