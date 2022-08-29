@@ -198,9 +198,10 @@ main {
   // sizing the icon itself
   &__icon {
     @media (max-width: 2000px) {
-      width: 75%;
+      width: 60%;
     }
     @media (max-width: 767px) {
+      width: 75%;
     }
     @media (max-width: 425px) {
       width: 100%;

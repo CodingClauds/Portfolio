@@ -122,7 +122,6 @@ export default function Body({ myRefAbout, myRefProjects }) {
               </div>
 
               <div className="techstack__service">
-                <div className="techstack__spacer"></div>
                 <img
                   src={RouterIcon}
                   alt="react router badge"
@@ -131,7 +130,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
               </div>
 
               <div className="techstack__service">
-                <div className="techstack__spacer"></div>
+                <div class="techstack__spacer"></div>
                 <img
                   src={AxiosIcon}
                   alt="axios badge"
