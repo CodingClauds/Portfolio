@@ -32,7 +32,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
           </div>
         </section>
 
-        <section className="about" id="about-me" ref={myRefAbout}>
+        <section className="about wrapper" id="about-me" ref={myRefAbout}>
           <div className="about__container">
             <div className="about__content">
               <div className="about__content--text">
@@ -60,88 +60,90 @@ export default function Body({ myRefAbout, myRefProjects }) {
                 />
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="techstack">
-              <h2 className="techstack__title">tech stack:</h2>
-              <div className="techstack__services-grid">
-                <div className="techstack__service">
-                  <img
-                    src={ReactIcon}
-                    alt="react badge"
-                    className="techstack__icon"
-                  />
-                </div>
-                <div className="techstack__service">
-                  <img
-                    src={HtmlIcon}
-                    alt="html badge"
-                    className="techstack__icon"
-                  />
-                </div>
+        <section>
+          <div className="techstack wrapper">
+            <h2 className="techstack__title">tech stack:</h2>
+            <div className="techstack__services-grid">
+              <div className="techstack__service">
+                <img
+                  src={ReactIcon}
+                  alt="react badge"
+                  className="techstack__icon"
+                />
+              </div>
+              <div className="techstack__service">
+                <img
+                  src={HtmlIcon}
+                  alt="html badge"
+                  className="techstack__icon"
+                />
+              </div>
 
-                <div className="techstack__service">
-                  <img
-                    src={CssIcon}
-                    alt="css badge"
-                    className="techstack__icon"
-                  />
-                </div>
+              <div className="techstack__service">
+                <img
+                  src={CssIcon}
+                  alt="css badge"
+                  className="techstack__icon"
+                />
+              </div>
 
-                <div className="techstack__service">
-                  <img
-                    src={JsIcon}
-                    alt="javascript badge"
-                    className="techstack__icon"
-                  />
-                </div>
+              <div className="techstack__service">
+                <img
+                  src={JsIcon}
+                  alt="javascript badge"
+                  className="techstack__icon"
+                />
+              </div>
 
-                <div className="techstack__service">
-                  <img
-                    src={SassIcon}
-                    alt="sass badge"
-                    className="techstack__icon"
-                  />
-                </div>
-                <div className="techstack__service">
-                  <img
-                    src={FirebaseIcon}
-                    alt="firebase badge"
-                    className="techstack__icon"
-                  />
-                </div>
+              <div className="techstack__service">
+                <img
+                  src={SassIcon}
+                  alt="sass badge"
+                  className="techstack__icon"
+                />
+              </div>
+              <div className="techstack__service">
+                <img
+                  src={FirebaseIcon}
+                  alt="firebase badge"
+                  className="techstack__icon"
+                />
+              </div>
 
-                <div className="techstack__service">
-                  <img
-                    src={NpmIcon}
-                    alt="npm badge"
-                    className="techstack__icon"
-                  />
-                </div>
+              <div className="techstack__service">
+                <img
+                  src={NpmIcon}
+                  alt="npm badge"
+                  className="techstack__icon"
+                />
+              </div>
 
-                <div className="techstack__service">
-                  <div className="techstack__spacer"></div>
-                  <img
-                    src={RouterIcon}
-                    alt="react router badge"
-                    className="techstack__icon"
-                  />
-                </div>
+              <div className="techstack__service">
+                <div className="techstack__spacer"></div>
+                <img
+                  src={RouterIcon}
+                  alt="react router badge"
+                  className="techstack__icon"
+                />
+              </div>
 
-                <div className="techstack__service">
-                  <div className="techstack__spacer"></div>
-                  <img
-                    src={AxiosIcon}
-                    alt="axios badge"
-                    className="techstack__icon"
-                  />
-                </div>
-                <div className="techstack__service">
-                  <img
-                    src={GithubIcon}
-                    alt="github badge"
-                    className="techstack__icon"
-                  />
-                </div>
+              <div className="techstack__service">
+                <div className="techstack__spacer"></div>
+                <img
+                  src={AxiosIcon}
+                  alt="axios badge"
+                  className="techstack__icon"
+                />
+              </div>
+              <div className="techstack__service">
+                <img
+                  src={GithubIcon}
+                  alt="github badge"
+                  className="techstack__icon"
+                />
               </div>
             </div>
           </div>
