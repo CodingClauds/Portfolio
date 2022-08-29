@@ -86,6 +86,7 @@ main {
 
   .about {
     background-color: #fff;
+    border: 1px solid red;
 
     @media (min-width: 768px) {
       margin-top: 12rem;
@@ -96,7 +97,7 @@ main {
       padding-bottom: 64px;
       max-width: 1400px;
 
-      @media (max-width: 1024px) {
+      @media (max-width: 2000px) {
         margin: 2rem;
       }
 
@@ -115,7 +116,7 @@ main {
       display: flex;
       justify-content: space-between;
 
-      @media (max-width: 1024px) {
+      @media (max-width: 2000px) {
         display: flex;
         margin-top: 4rem;
       }
@@ -161,7 +162,7 @@ main {
       // top: 5rem;
       // left: 5rem;
 
-      @media (max-width: 1024px) {
+      @media (max-width: 2000px) {
       }
       @media (max-width: 767px) {
         margin: 0 auto;
@@ -178,7 +179,7 @@ main {
 
     // profile image
     &__headshot {
-      @media (max-width: 1024px) {
+      @media (max-width: 2000px) {
         border-radius: 50%;
         width: 20rem;
       }
@@ -197,7 +198,7 @@ main {
   }
 
   .techstack {
-    @media (max-width: 1024px) {
+    @media (max-width: 2000px) {
       // margin-top: 10rem;
       margin-top: 5rem;
     }
@@ -209,7 +210,7 @@ main {
 
     // sizing the icon itself
     &__icon {
-      @media (max-width: 1024px) {
+      @media (max-width: 2000px) {
         width: 75%;
       }
       @media (max-width: 767px) {
@@ -226,7 +227,7 @@ main {
       // grid-template-columns: repeat(5, 1fr);
       // grid-gap: 16px;
 
-      @media (max-width: 1024px) {
+      @media (max-width: 2000px) {
         margin-top: 5rem;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -240,28 +241,29 @@ main {
       @media (max-width: 425px) {
         margin-top: 2rem;
       }
+    }
 
-      // sizing the icon container itself
-      &__service {
-        // overflow: hidden;
+    // sizing the icon container itself
+    &__service {
+      // overflow: hidden;
+      // max-width: 40%;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 2000px) {
+        overflow: hidden;
         // max-width: 40%;
-        display: flex;
-        justify-content: center;
+      }
+      @media (max-width: 767px) {
+        // max-width: 30%;
+      }
 
-        @media (max-width: 1024px) {
-          overflow: hidden;
-          max-width: 40%;
-        }
-        @media (max-width: 767px) {
-          max-width: 30%;
-        }
-
-        @media (max-width: 425px) {
-          padding: 1rem;
-          max-width: 100%;
-        }
+      @media (max-width: 425px) {
+        padding: 1rem;
+        max-width: 100%;
       }
     }
+
     &__spacer {
       min-height: 25px;
     }
@@ -313,7 +315,7 @@ main {
           font-size: 32px;
           margin-bottom: 16px;
 
-          @media (max-width: 1024px) {
+          @media (max-width: 2000px) {
             font-size: 28px;
           }
         }
@@ -322,7 +324,7 @@ main {
           font-size: 18px;
           margin-bottom: 16px;
 
-          @media (max-width: 1024px) {
+          @media (max-width: 2000px) {
             font-size: 16px;
           }
         }

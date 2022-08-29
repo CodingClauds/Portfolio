@@ -44,11 +44,12 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   forward. My past career was specific in automation and
                   robotics where I first caught wind of coding and seeing the
                   endless possiblities.
-                  <br />I was inspired by the tech industry for its level of
+                  <br />I was inspired by web developement for it's level of
                   attention to inclusivity and working closely with ones
                   passion. I thrive in group environments and enjoy the energy
-                  that comes from collaboration. I'm looking forward to what
-                  drives me, reach out and let's power through some code!
+                  that comes from collaboration. I'm looking forward to this new
+                  chapter while also focusing on what drives me, reach out and
+                  let's power through some code!
                 </p>
               </div>
               <div className="about__profile">
