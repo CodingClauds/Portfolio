@@ -1,7 +1,6 @@
 import "./Footer.scss";
 import github from "../../assets/images/social-icons/github-white.svg";
 import linkedin from "../../assets/images/social-icons/linkedin-white.svg";
-import instagram from "../../assets/images/social-icons/instagram-white.svg";
 import twitter from "../../assets/images/social-icons/twitter-white.svg";
 
 export default function Footer({ myRefContact }) {
