@@ -37,19 +37,27 @@ export default function Body({ myRefAbout, myRefProjects }) {
             <div className="about__content">
               <div className="about__content--text">
                 <p className="about__description">
-                  Hello, my name is Claudio! Originally a registered tool-maker
-                  in the automotive sector, now turned front-end developer.
-                  Decided to pivot and focus myself and my passion around what
-                  matters most, while still leveraging my past experiences
-                  forward. My past career was specific in automation and
-                  robotics where I first caught wind of coding and seeing the
-                  endless possiblities.
-                  <br />I was inspired by web developement for it's level of
-                  attention to inclusivity and working closely with ones
-                  passion. I thrive in group environments and enjoy the energy
-                  that comes from collaboration. I'm looking forward to this new
-                  chapter while also focusing on what drives me, reach out and
-                  let's power through some code!
+                  <p className="about__inner-text">
+                    Hello, my name is Claudio! I decided to pivot into tech and
+                    take the plunge after 7 years in the automotive industry.
+                    Initially working as a registered tool-maker, then narrowed
+                    down specifically into robotics and automation.
+                  </p>
+                  <p className="about__inner-text">
+                    This was where I got my first taste for coding and seeing
+                    the extensive reach it has. I was born in Canada but my
+                    background is Portuguese, I have dual nationality and can
+                    speak fluently.
+                  </p>
+                  <p className="about__inner-text">
+                    I love sinking my teeth into new challenges and this is what
+                    sparked my interest into Web Development. An industry that
+                    is constantly evolving which keeps me on my toes and allows
+                    to explore the unknown. When I am not at my desk you’ll most
+                    likely catch me biking around soaking up some sun, rock
+                    climbing or cooking away for friends and having them tell me
+                    all about the latest trendy restaurant.
+                  </p>
                 </p>
               </div>
               <div className="about__profile">
@@ -185,7 +193,9 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     visually appealing app to help those making habits fun.
                   </p>
 
-                  <a className="button">Learn more</a>
+                  <a className="button" href="/">
+                    Learn more
+                  </a>
                 </div>
               </div>
               <div className="project">
@@ -213,7 +223,9 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     Dolores, mollitia voluptas dolore reprehenderit nulla
                     consectetur ipsa accusantium facilis! Cumque, voluptate!
                   </p>
-                  <a className="button">Learn more</a>
+                  <a className="button" href="/">
+                    Learn more
+                  </a>
                 </div>
               </div>
               <div className="project">
@@ -224,7 +236,9 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     Dolores, mollitia voluptas dolore reprehenderit nulla
                     consectetur ipsa accusantium facilis! Cumque, voluptate!
                   </p>
-                  <a className="button">Learn more</a>
+                  <a className="button" href="/">
+                    Learn more
+                  </a>
                 </div>
               </div>
               <div className="project">
@@ -235,7 +249,9 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     Dolores, mollitia voluptas dolore reprehenderit nulla
                     consectetur ipsa accusantium facilis! Cumque, voluptate!
                   </p>
-                  <a className="button">Learn more</a>
+                  <a className="button" href="/">
+                    Learn more
+                  </a>
                 </div>
               </div>
             </div>
