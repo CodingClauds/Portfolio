@@ -68,19 +68,31 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
       <nav className="mobile-nav">
         <ul>
           <li>
-            <a className="mobile-navlink" href="#">
+            <span
+              className="mobile-navlink"
+              onClick={() => executeScroll(myRefAbout)}
+              href="about-me"
+            >
               About
-            </a>
+            </span>
           </li>
           <li>
-            <a className="mobile-navlink" href="#">
+            <span
+              className="mobile-navlink"
+              onClick={() => executeScroll(myRefProjects)}
+              href="projects"
+            >
               Projects
-            </a>
+            </span>
           </li>
           <li>
-            <a className="mobile-navlink" href="#">
+            <span
+              className="mobile-navlink"
+              onClick={() => executeScroll(myRefContact)}
+              href="contact"
+            >
               Contact
-            </a>
+            </span>
           </li>
         </ul>
       </nav>

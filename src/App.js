@@ -23,7 +23,12 @@ function App() {
         myRefContact={myRefContact}
         executeScroll={executeScroll}
       />
-      <Body myRefAbout={myRefAbout} myRefProjects={myRefProjects} />
+      <Body
+        myRefAbout={myRefAbout}
+        myRefProjects={myRefProjects}
+        myRefContact={myRefContact}
+        executeScroll={executeScroll}
+      />
       <Footer myRefContact={myRefContact} />
     </>
   );

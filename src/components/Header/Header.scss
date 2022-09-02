@@ -60,10 +60,6 @@ header {
     @media (max-width: 1024px) {
       margin-left: 1.5rem;
     }
-
-    // @media (max-width: 767px) {
-    //   margin-left: 1.5rem;
-    // }
   }
 
   /* stroke */
@@ -140,7 +136,8 @@ header {
   width: 100%;
   min-height: 100vh;
   z-index: 99;
-  background-color: #12002f;
+  background-color: beige;
+  opacity: 0.9;
   padding-top: 120px;
   transition: 0.9s;
 }
@@ -156,16 +153,10 @@ header {
   margin: 0 auto 16px;
   text-align: center;
   padding: 12px 16px;
-  // background-color: #595cb0;
-  background-color: #12002f;
-
-  color: #fff;
-}
-
-.mobile-navlink:hover {
-  // background-color: #12002f;
-  background-color: #595cb0;
-  transition: 0.8s ease-in;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
 }
 
 @media (min-width: 768px) {
