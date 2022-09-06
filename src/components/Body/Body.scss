@@ -74,7 +74,7 @@ main {
       white-space: nowrap; /* Keeps the content on a single line */
       margin: 0 auto; /* Gives that scrolling effect as the typing happens */
       letter-spacing: 0.18em; /* Adjust as needed */
-      animation: typing 3.5s steps(35, end), blink-caret 0.5s step-end infinite;
+      animation: typing 3s steps(38, end), blink-caret 0.5s step-end infinite;
     }
 
     /* The typing effect */
