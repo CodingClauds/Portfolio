@@ -24,10 +24,8 @@ export default function Body({ myRefAbout, myRefProjects }) {
               <span>not afraid</span> to share
             </h1>
 
-            <div className="infinite">
-              <h3 className="infinite__title">
-                Let's <span className="infinite__rotate-text"></span>
-              </h3>
+            <div className="infinite typewriter">
+              <h3 className="infinite__title">Let's Develop.</h3>
             </div>
           </div>
         </section>
@@ -36,7 +34,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
           <div className="about__container">
             <div className="about__content">
               <div className="about__content--text">
-                <p className="about__description">
+                <div className="about__description">
                   <p className="about__inner-text">
                     Hello, my name is Claudio! I decided to pivot into tech and
                     take the plunge after 7 years in the automotive industry.
@@ -45,20 +43,19 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   </p>
                   <p className="about__inner-text">
                     This was where I got my first taste for coding and seeing
-                    the extensive reach it has. I was born in Canada but my
-                    background is Portuguese, I have dual nationality and can
-                    speak fluently.
-                  </p>
-                  <p className="about__inner-text">
-                    I love sinking my teeth into new challenges and this is what
+                    the potential it has.I love new challenges and this is what
                     sparked my interest into Web Development. An industry that
                     is constantly evolving which keeps me on my toes and allows
-                    to explore the unknown. When I am not at my desk you’ll most
-                    likely catch me biking around soaking up some sun, rock
-                    climbing or cooking away for friends and having them tell me
-                    all about the latest trendy restaurant.
+                    to explore the unknown.
                   </p>
-                </p>
+                  <p className="about__inner-text">
+                    I was born in Canada but my background is Portuguese, I have
+                    dual nationality and can speak fluently. When I am not at my
+                    desk you’ll most likely catch me biking around in the sun,
+                    rock climbing or cooking away for friends and having them
+                    tell me about the latest restaurants.
+                  </p>
+                </div>
               </div>
               <div className="about__profile">
                 <img
@@ -138,7 +135,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
               </div>
 
               <div className="techstack__service">
-                <div class="techstack__spacer"></div>
+                <div className="techstack__spacer"></div>
                 <img
                   src={AxiosIcon}
                   alt="axios badge"
