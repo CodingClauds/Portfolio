@@ -159,7 +159,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
 
             <div className="projects-grid">
               <div className="project">
-                <div className="content content__1">
+                <div className="content content__item-1">
                   <h3>MaeSurf</h3>
                   <p>
                     MaeSurf is a surf camp website that is designed to help
@@ -178,7 +178,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                 </div>
               </div>
               <div className="project">
-                <div className="content">
+                <div className="content content__item-2">
                   <h3>Sproutr</h3>
                   <p>
                     Sproutr is a habit building app that lets you choose & track
@@ -196,13 +196,14 @@ export default function Body({ myRefAbout, myRefProjects }) {
                 </div>
               </div>
               <div className="project">
-                <div className="content">
+                <div className="content content__item-3">
                   <h3>Horoscoped</h3>
                   <p>
                     For one of our "mini-hackathons" we created a Horoscope app
                     that utilizes API’s to retrieve data when an individual user
                     inputs their specific birthday.
-                    <br />
+                  </p>
+                  <p>
                     As such it will return one of the 12 astrological signs and
                     a quote that is randomly generated from the API. We also
                     included a date/time API.
@@ -212,7 +213,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   </a>
                 </div>
               </div>
-              <div className="project">
+              {/* <div className="project">
                 <div className="content">
                   <h3>Project 4</h3>
                   <p>
@@ -250,7 +251,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     Learn more
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
