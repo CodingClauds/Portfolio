@@ -190,7 +190,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     visually appealing app to help those making habits fun.
                   </p>
 
-                  <a className="button" href="/">
+                  <a className="button" href="https://sproutr.netlify.app/">
                     Learn more
                   </a>
                 </div>
