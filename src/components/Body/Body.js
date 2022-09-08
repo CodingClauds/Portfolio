@@ -1,4 +1,3 @@
-import React from "react";
 import "./Body.scss";
 import Me from "../../assets/images/BSTN-May-2022-Toront-CT-Headshot-31.jpg";
 
