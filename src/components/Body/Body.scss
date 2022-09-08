@@ -6,9 +6,8 @@ main {
     display: flex;
     align-items: center;
 
-    // background-image: url("../../assets/images/RedwoodsNationalPark.jpeg");
-    background-color: bisque;
-    background-position: top right;
+    background-image: url("../../assets/images/background.jpg");
+    background-position: top;
     background-size: cover;
 
     &:after {
@@ -21,7 +20,7 @@ main {
       bottom: 0;
       z-index: 0;
       background-color: #000;
-      opacity: 0.5;
+      opacity: 0.1;
     }
 
     .container {
