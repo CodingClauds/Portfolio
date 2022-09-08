@@ -38,22 +38,22 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   <p className="about__inner-text">
                     Hello, my name is Claudio! I decided to pivot into tech and
                     take the plunge after 7 years in the automotive industry.
-                    Initially working as a registered tool-maker, then narrowed
-                    down specifically into robotics and automation.
+                    Initially working as a registered tool-maker, further
+                    narrowed down specifically into robotics and automation.
                   </p>
                   <p className="about__inner-text">
-                    This was where I got my first taste for coding and seeing
-                    the potential it has.I love new challenges and this is what
-                    sparked my interest into Web Development. An industry that
-                    is constantly evolving which keeps me on my toes and allows
-                    to explore the unknown.
+                    This was where I got my first taste for programming and
+                    seeing it's true potential. I love new challenges and this
+                    is what sparked my interest into Web Development. An
+                    industry that is constantly evolving, keeping me on my toes
+                    and allows to explore the unknown.
                   </p>
                   <p className="about__inner-text">
                     I was born in Canada but my background is Portuguese, I have
                     dual nationality and can speak fluently. When I am not at my
-                    desk you’ll most likely catch me biking around in the sun,
-                    rock climbing or cooking away for friends and having them
-                    tell me about the latest restaurants.
+                    desk you'll most likely catch me biking around in the sun,
+                    rock climbing or cooking away for friends while having them
+                    tell me about the latest local eats.
                   </p>
                 </div>
               </div>
