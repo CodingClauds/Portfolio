@@ -10,6 +10,15 @@
 
     h2 {
       color: #fff;
+      padding-bottom: 2rem;
+
+      @include tablet {
+        font-size: 4rem;
+      }
+
+      @include desktop {
+        font-size: 5rem;
+      }
     }
   }
 
@@ -21,21 +30,42 @@
     margin: 0;
   }
 
+  &__borderbottom {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+
+    @include tablet {
+      border-bottom: 4px solid white;
+      padding-bottom: 1rem;
+    }
+  }
+
   &__social {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 3rem 0;
-    max-width: 250px;
 
     @include tablet {
-      width: 20rem;
-      max-width: 400px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 3rem 0;
+    }
+  }
+
+  &__link {
+    @include tablet {
+      padding: 0 3rem;
     }
   }
 
   &__handle {
     width: 3.5rem;
+
+    @include tablet {
+      width: 5rem;
+    }
   }
 
   &__acknowledgements {
