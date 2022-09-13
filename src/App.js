@@ -5,8 +5,6 @@ import Header from "./components/Header/Header";
 
 import { useRef } from "react";
 
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 function App() {
   const myRefAbout = useRef(null);
   const myRefProjects = useRef(null);

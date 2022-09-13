@@ -4,6 +4,8 @@ import linkedin from "../../assets/images/social-icons/linkedin-white.svg";
 import email from "../../assets/images/social-icons/email-white.png";
 
 export default function Footer({ myRefContact }) {
+  const today = new Date().getFullYear();
+
   return (
     <>
       <footer className="contact" id="contact" ref={myRefContact}>
@@ -37,7 +39,8 @@ export default function Footer({ myRefContact }) {
 
           <div className="contact__acknowledgements">
             <span className="contact__copyright">
-              Claudio Miranda © All Rights Reserved 2022.
+              Claudio Miranda © All Rights Reserved{" "}
+              <span id="copyright-year">{today}</span>
             </span>
           </div>
         </div>
