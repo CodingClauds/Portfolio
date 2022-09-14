@@ -291,15 +291,8 @@ main {
         filter: grayscale(1);
         transition: 0.4s;
         color: #fff;
-        padding: 16px;
         background-color: rgba(24, 195, 172, 0.8);
-        min-height: 18rem;
-
-        // &__1 {
-        //   background: no-repeat;
-        //   background-image: url(../../assets/images/maesurf.png);
-        //   background-size: 100%;
-        // }
+        height: 32rem;
 
         h3 {
           font-size: 32px;
@@ -317,6 +310,20 @@ main {
           @media (max-width: 2000px) {
             font-size: 16px;
           }
+        }
+
+        &__photocard {
+          height: 200px;
+        }
+
+        &__photocard-img {
+          width: 100%;
+          object-fit: contain;
+        }
+
+        &__photocard-text {
+          margin-top: 2rem;
+          padding: 16px;
         }
       }
     }
