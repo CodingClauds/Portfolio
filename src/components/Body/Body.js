@@ -12,6 +12,10 @@ import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
 import AxiosIcon from "../../assets/images/techstack/axios.svg";
 import NpmIcon from "../../assets/images/techstack/npm.svg";
 
+// import Maesurf from "../../assets/images/maesurf.png";
+import Horoscope from "../../assets/images/horoscope.png";
+import Sproutr from "../../assets/images/sproutr.png";
+
 export default function Body({ myRefAbout, myRefProjects }) {
   return (
     <>
@@ -45,14 +49,14 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     seeing it's true potential. I love new challenges and this
                     is what sparked my interest into Web Development. An
                     industry that is constantly evolving, keeping me on my toes
-                    and allows to explore the unknown.
+                    and allowing to explore the unknown.
                   </p>
                   <p className="about__inner-text">
                     I was born in Canada but my background is Portuguese, I have
-                    dual nationality and can speak fluently. When I am not at my
-                    desk you'll most likely catch me biking around in the sun,
-                    rock climbing or cooking away for friends while having them
-                    tell me about the latest local eats.
+                    dual citizenship and I can speak fluently. When I am not at
+                    my desk you'll most likely catch me biking around in the
+                    sun, rock climbing or cooking away for friends while having
+                    them tell me all about the latest local eats.
                   </p>
                 </div>
               </div>
@@ -158,97 +162,115 @@ export default function Body({ myRefAbout, myRefProjects }) {
 
             <div className="projects-grid">
               <div className="project">
-                <div className="content content__item-1">
-                  <h3>MaeSurf</h3>
-                  <p>
-                    MaeSurf is a surf camp website that is designed to help
-                    travellers book surf lessons in Costa Rica.
-                  </p>
-                  <p>
-                    I was tasked with organizing the site, giving it a clean
-                    look that coincides with the teams vision and adding in key
-                    functionalities to help attract clients and traffic to the
-                    site.
-                  </p>
-
-                  <a href="https://maesurf.com/" className="button">
-                    Learn more
+                <div className="content">
+                  <a href="https://maesurf.com/">
+                    <div className="content__photocard">
+                      <img
+                        className="content__photocard-img"
+                        // src={Maesurf}
+                        alt="webapp homescreen snapshot"
+                      />
+                    </div>
                   </a>
+
+                  <div className="content__photocard-text">
+                    <h3>MaeSurf</h3>
+                    <p>
+                      MaeSurf is a surf camp website that is designed to help
+                      travellers book surf lessons in Costa Rica.
+                    </p>
+                    <p>
+                      I was tasked with organizing the site, giving it a clean
+                      look that coincides with the teams vision and adding in
+                      key functionalities to help attract clients and traffic to
+                      the site.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="project">
                 <div className="content content__item-2">
-                  <h3>Sproutr</h3>
-                  <p>
-                    Sproutr is a habit building app that lets you choose & track
-                    a new or existing habit. At Sproutr we are about helping
-                    those create the habits that matter.
-                  </p>
-                  <p>
-                    The approach we decided to take was to create a friendly and
-                    visually appealing app to help those making habits fun.
-                  </p>
-
-                  <a className="button" href="https://sproutr.netlify.app/">
-                    Learn more
+                  <a href="https://sproutr.netlify.app/">
+                    <div className="content__photocard">
+                      <img
+                        className="content__photocard-img"
+                        src={Sproutr}
+                        alt="webapp homescreen snapshot"
+                      />
+                    </div>
                   </a>
+                  <div className="content__photocard-text">
+                    <h3>Sproutr</h3>
+                    <p>
+                      Sproutr is a habit building app that lets you choose &
+                      track a new or existing habit. At Sproutr we are about
+                      helping those create the habits that matter.
+                    </p>
+                    <p>
+                      The approach we decided to take was to create a friendly
+                      and visually appealing app to help those making habits
+                      fun.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="project">
                 <div className="content content__item-3">
-                  <h3>Horoscoped</h3>
-                  <p>
-                    For one of our "mini-hackathons" we created a Horoscope app
-                    that utilizes API’s to retrieve data when an individual user
-                    inputs their specific birthday.
-                  </p>
-                  <p>
-                    As such it will return one of the 12 astrological signs and
-                    a quote that is randomly generated from the API. We also
-                    included a date/time API.
-                  </p>
-                  <a href="https://hororscoped.netlify.app/" className="button">
-                    Learn more
+                  <a href="https://hororscoped.netlify.app/">
+                    <div className="content__photocard">
+                      <img
+                        className="content__photocard-img"
+                        src={Horoscope}
+                        alt="webapp homescreen snapshot"
+                      />
+                    </div>
                   </a>
+                  <div className="content__photocard-text">
+                    <h3>Horoscoped</h3>
+                    <p>
+                      For one of our "mini-hackathons" we created a Horoscope
+                      app that utilizes API’s to retrieve data when an
+                      individual user inputs their specific birthday.
+                    </p>
+                    <p>
+                      As such it will return one of the 12 astrological signs
+                      and a quote that is randomly generated from the API. We
+                      also included a date/time API.
+                    </p>
+                  </div>
                 </div>
               </div>
+
+              {/* ========================Template for Future Projects ======================= */}
+
               {/* <div className="project">
-                <div className="content">
-                  <h3>Project 4</h3>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolores, mollitia voluptas dolore reprehenderit nulla
-                    consectetur ipsa accusantium facilis! Cumque, voluptate!
-                  </p>
-                  <a className="button" href="/">
-                    Learn more
+                <div className="content content__item-4">
+                  <a href="">
+                    <div className="content__photocard">
+                      <img
+                        className="content__photocard-img"
+                        src={}
+                        alt="webapp homescreen snapshot"
+                      />
+                    </div>
                   </a>
-                </div>
-              </div>
-              <div className="project">
-                <div className="content">
-                  <h3>Project 5</h3>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolores, mollitia voluptas dolore reprehenderit nulla
-                    consectetur ipsa accusantium facilis! Cumque, voluptate!
-                  </p>
-                  <a className="button" href="/">
-                    Learn more
-                  </a>
-                </div>
-              </div>
-              <div className="project">
-                <div className="content">
-                  <h3>Project 6</h3>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolores, mollitia voluptas dolore reprehenderit nulla
-                    consectetur ipsa accusantium facilis! Cumque, voluptate!
-                  </p>
-                  <a className="button" href="/">
-                    Learn more
-                  </a>
+                  <div className="content__photocard-text">
+                    <h3>Title of Project</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestias exercitationem veniam nihil aspernatur voluptas
+                      placeat mollitia? Voluptates magni et laudantium
+                      voluptatibus autem temporibus optio minus! Earum veritatis
+                      obcaecati numquam commodi.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestias exercitationem veniam nihil aspernatur voluptas
+                      placeat mollitia? Voluptates magni et laudantium
+                      voluptatibus autem temporibus optio minus! Earum veritatis
+                      obcaecati numquam commodi.
+                    </p>
+                  </div>
                 </div>
               </div> */}
             </div>
