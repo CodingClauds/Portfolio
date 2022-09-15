@@ -1,14 +1,21 @@
-@use "./styles/partials/_globals.scss" as *;
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
   font-family: "Fira Sans", sans-serif;
-  // font-family: "Work Sans", sans-serif;
 }
 
+body {
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
 span {
   text-decoration: none;
 }
