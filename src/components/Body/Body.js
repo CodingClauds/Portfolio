@@ -12,7 +12,7 @@ import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
 import AxiosIcon from "../../assets/images/techstack/axios.svg";
 import NpmIcon from "../../assets/images/techstack/npm.svg";
 
-// import Maesurf from "../../assets/images/maesurf.png";
+import Maesurf from "../../assets/images/maesurf.png";
 import Horoscope from "../../assets/images/horoscope.png";
 import Sproutr from "../../assets/images/sproutr.png";
 
@@ -167,7 +167,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     <div className="content__photocard">
                       <img
                         className="content__photocard-img"
-                        // src={Maesurf}
+                        src={Maesurf}
                         alt="webapp homescreen snapshot"
                       />
                     </div>
@@ -177,13 +177,12 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     <h3>MaeSurf</h3>
                     <p>
                       MaeSurf is a surf camp website that is designed to help
-                      travellers book surf lessons in Costa Rica.
+                      travellers book full surf camps and lessons in Costa Rica.
                     </p>
                     <p>
-                      I was tasked with organizing the site, giving it a clean
-                      look that coincides with the teams vision and adding in
-                      key functionalities to help attract clients and traffic to
-                      the site.
+                      I was tasked with organizing the site that coincides with
+                      the teams vision and adding in key functionalities to help
+                      attract traffic to the site.
                     </p>
                   </div>
                 </div>
