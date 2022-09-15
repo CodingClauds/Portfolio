@@ -136,7 +136,7 @@ header {
   width: 100%;
   min-height: 100vh;
   z-index: 99;
-  background-color: beige;
+  background-color: #000000;
   opacity: 0.9;
   padding-top: 120px;
   transition: 0.9s;
@@ -155,8 +155,11 @@ header {
   padding: 12px 16px;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 20px;
-  color: #000;
+  font-size: 24px;
+  color: #fff;
+}
+.mobile-navlink:hover {
+  border-bottom: 0.5px solid lightgreen;
 }
 
 @media (min-width: 768px) {
