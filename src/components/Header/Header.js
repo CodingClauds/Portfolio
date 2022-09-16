@@ -1,5 +1,4 @@
 import "./Header.scss";
-import "../Body/Body.js";
 
 function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
   // Hamburger Menu Functionality
