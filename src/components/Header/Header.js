@@ -1,8 +1,8 @@
 import "./Header.scss";
 
 function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
-  // Hamburger Menu Functionality
   window.onload = function () {
+    // Scroll function executes when user clicks menu item.
     window.addEventListener("scroll", function (e) {
       if (window.pageYOffset > 100) {
         document.querySelector("header").classList.add("is-scrolling");
@@ -11,12 +11,29 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
       }
     });
 
-    const menu_button = document.querySelector(".hamburger");
-    const mobile_menu = document.querySelector(".mobile-nav");
+    // Create variables and append class, to allow all our functionality to stem from these.
+    const menuButton = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-nav");
 
-    menu_button.addEventListener("click", function () {
-      menu_button.classList.toggle("is-active");
-      mobile_menu.classList.toggle("is-active");
+    // Create toggle function
+    function toggleMenu() {
+      menuButton.classList.toggle("is-active");
+      mobileMenu.classList.toggle("is-active");
+    }
+
+    // When user clicks menu, toggle function is executed.
+    menuButton.addEventListener("click", function () {
+      toggleMenu();
+    });
+
+    // Create variable and append, this will be when user clicks individual item in the mobile view. Mobile Screen shifts out of view.
+    const menuItems = document.querySelectorAll(".menuItem");
+
+    // When user clicks ANY menuItem, mobile screen disappears.
+    menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener("click", function () {
+        toggleMenu();
+      });
     });
   };
 
@@ -65,8 +82,8 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
       </header>
 
       <nav className="mobile-nav">
-        <ul>
-          <li>
+        <ul className="mobile-nav__menu">
+          <li className="menuItem">
             <span
               className="mobile-navlink"
               onClick={() => executeScroll(myRefAbout)}
@@ -75,7 +92,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
               About
             </span>
           </li>
-          <li>
+          <li className="menuItem">
             <span
               className="mobile-navlink"
               onClick={() => executeScroll(myRefProjects)}
@@ -84,7 +101,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
               Projects
             </span>
           </li>
-          <li>
+          <li className="menuItem">
             <span
               className="mobile-navlink"
               onClick={() => executeScroll(myRefContact)}
