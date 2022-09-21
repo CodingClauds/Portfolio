@@ -12,9 +12,10 @@ import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
 import AxiosIcon from "../../assets/images/techstack/axios.svg";
 import NpmIcon from "../../assets/images/techstack/npm.svg";
 
-import Maesurf from "../../assets/images/maesurf.png";
 import Horoscope from "../../assets/images/horoscope.png";
+import Maesurf from "../../assets/images/maesurf.png";
 import Sproutr from "../../assets/images/sproutr.png";
+import F1 from "../../assets/images/f1stopwatch.png";
 
 export default function Body({ myRefAbout, myRefProjects }) {
   return (
@@ -162,33 +163,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
 
             <div className="projects-grid">
               <div className="project">
-                <div className="content">
-                  <a href="https://maesurf.com/">
-                    <div className="content__photocard">
-                      <img
-                        className="content__photocard-img"
-                        src={Maesurf}
-                        alt="webapp homescreen snapshot"
-                      />
-                    </div>
-                  </a>
-
-                  <div className="content__photocard-text">
-                    <h3>MaeSurf</h3>
-                    <p>
-                      MaeSurf is a surf camp website that is designed to help
-                      travellers book full surf camps and lessons in Costa Rica.
-                    </p>
-                    <p>
-                      I was tasked with organizing the site that coincides with
-                      the teams vision and adding in key functionalities to help
-                      attract traffic to the site.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="project">
-                <div className="content content__item-2">
+                <div className="content content__item-1">
                   <a href="https://sproutr.netlify.app/">
                     <div className="content__photocard">
                       <img
@@ -213,6 +188,33 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   </div>
                 </div>
               </div>
+
+              <div className="project">
+                <div className="content content__item-2">
+                  <a href="https://maesurf.com/">
+                    <div className="content__photocard">
+                      <img
+                        className="content__photocard-img"
+                        src={Maesurf}
+                        alt="webapp homescreen snapshot"
+                      />
+                    </div>
+                  </a>
+                  <div className="content__photocard-text">
+                    <h3>MaeSurf</h3>
+                    <p>
+                      MaeSurf is a surf camp website that is designed to help
+                      travellers book full surf camps and lessons in Costa Rica.
+                    </p>
+                    <p>
+                      I was tasked with organizing the site that coincides with
+                      the teams vision and adding in key functionalities to help
+                      attract traffic to the site.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <div className="project">
                 <div className="content content__item-3">
                   <a href="https://hororscoped.netlify.app/">
@@ -240,10 +242,34 @@ export default function Body({ myRefAbout, myRefProjects }) {
                 </div>
               </div>
 
+              <div className="project">
+                <div className="content content__item-4">
+                  <a href="https://f1-stopwatch.netlify.app/">
+                    <div className="content__photocard">
+                      <img
+                        className="content__photocard-img"
+                        src={F1}
+                        alt="webapp homescreen snapshot"
+                      />
+                    </div>
+                  </a>
+                  <div className="content__photocard-text">
+                    <h3>F1 Stopwatch</h3>
+                    <p>
+                      In this project, I utilized my knowledge of javascript to
+                      add a stopwatch feature that is fully functional and add
+                      flipcards that have the 2022 Driver Lineup. This is where
+                      we have to match the pairs, and see who really knows what
+                      it takes to take podium.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {/* ========================Template for Future Projects ======================= */}
 
               {/* <div className="project">
-                <div className="content content__item-4">
+                <div className="content content__item-">
                   <a href="">
                     <div className="content__photocard">
                       <img
