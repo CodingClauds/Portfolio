@@ -40,7 +40,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
 
   return (
     <>
-      <header>
+      <header className="is-scrolling">
         <div className="container wrapper">
           <a href="/">
             <h2>Claudio Miranda</h2>
@@ -82,7 +82,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
         </div>
       </header>
 
-      <nav className="mobile-nav">
+      <nav className="mobile-nav is-scrolling">
         <ul className="mobile-nav__menu">
           <li className="menuItem">
             <span

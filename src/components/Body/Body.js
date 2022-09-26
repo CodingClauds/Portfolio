@@ -37,6 +37,13 @@ export default function Body({ myRefAbout, myRefProjects }) {
         <section className="about wrapper" id="about-me" ref={myRefAbout}>
           <div className="about__container">
             <div className="about__content">
+              <div className="about__profile">
+                <img
+                  className="about__headshot"
+                  src={Me}
+                  alt="profile headshot"
+                />
+              </div>
               <div className="about__content--text">
                 <div className="about__description">
                   <p className="about__inner-text">
@@ -60,13 +67,6 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     them tell me all about the latest local eats.
                   </p>
                 </div>
-              </div>
-              <div className="about__profile">
-                <img
-                  className="about__headshot"
-                  src={Me}
-                  alt="profile headshot"
-                />
               </div>
             </div>
           </div>
@@ -172,26 +172,28 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     />
                   </div>
 
-                  <div className="content__photocard-text">
-                    <h3>Sproutr</h3>
-                    <p>
-                      Sproutr is a habit building app that lets you choose &
-                      track a new or existing habit. At Sproutr we are about
-                      helping those create the habits that matter.
-                    </p>
-                    <p>
-                      The approach we decided to take was to create a friendly
-                      and visually appealing app to help those making habits
-                      fun.
-                    </p>
+                  <div className="content__photocard-container">
+                    <div className="content__photocard-content">
+                      <h3>Sproutr</h3>
+                      <p>
+                        Sproutr is a habit building app that lets you choose &
+                        track a new or existing habit. At Sproutr we are about
+                        helping those create the habits that matter.
+                      </p>
+                      <p>
+                        The approach we decided to take was to create a friendly
+                        and visually appealing app to help those making habits
+                        fun.
+                      </p>
 
-                    <div className="buttonBase">
-                      <a href="https://sproutr.netlify.app/">
-                        <button className="buttonBase__button">Demo</button>
-                      </a>
-                      <a href="https://github.com/CodingClauds/sproutr-capstone">
-                        <button className="buttonBase__button">Code</button>
-                      </a>
+                      <div className="buttonBase">
+                        <a href="https://sproutr.netlify.app/">
+                          <button className="buttonBase__button">Demo</button>
+                        </a>
+                        <a href="https://github.com/CodingClauds/sproutr-capstone">
+                          <button className="buttonBase__button">Code</button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -207,20 +209,23 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     />
                   </div>
 
-                  <div className="content__photocard-text">
-                    <h3>MaeSurf</h3>
-                    <p>
-                      MaeSurf is a surf camp website that is designed to help
-                      travellers book full surf camps and lessons in Costa Rica.
-                    </p>
-                    <p>
-                      Currently tasked with organizing the site and adding in
-                      key functionalities to help attract traffic to the site.
-                    </p>
-                    <div className="buttonBase">
-                      <a href="https://maesurf.com/">
-                        <button className="buttonBase__button">Demo</button>
-                      </a>
+                  <div className="content__photocard-container">
+                    <div className="content__photocard-content">
+                      <h3>MaeSurf</h3>
+                      <p>
+                        MaeSurf is a surf camp website that is designed to help
+                        travellers book full surf camps and lessons in Costa
+                        Rica.
+                      </p>
+                      <p>
+                        Currently tasked with organizing the site and adding in
+                        key functionalities to help attract traffic to the site.
+                      </p>
+                      <div className="buttonBase">
+                        <a href="https://maesurf.com/">
+                          <button className="buttonBase__button">Demo</button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -236,21 +241,23 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     />
                   </div>
 
-                  <div className="content__photocard-text">
-                    <h3>Horoscoped</h3>
-                    <p>
-                      For one of our "mini-hackathons" we created a Horoscope
-                      app that utilizes API’s to retrieve data when an
-                      individual user inputs their specific birthday.
-                    </p>
+                  <div className="content__photocard-container">
+                    <div className="content__photocard-content">
+                      <h3>Horoscoped</h3>
+                      <p>
+                        For one of our "mini-hackathons" we created a Horoscope
+                        app that utilizes API’s to retrieve data when an
+                        individual user inputs their specific birthday.
+                      </p>
 
-                    <div className="buttonBase">
-                      <a href="https://hororscoped.netlify.app/">
-                        <button className="buttonBase__button">Demo</button>
-                      </a>
-                      <a href="https://github.com/CodingClauds/horoscoped">
-                        <button className="buttonBase__button">Code</button>
-                      </a>
+                      <div className="buttonBase">
+                        <a href="https://hororscoped.netlify.app/">
+                          <button className="buttonBase__button">Demo</button>
+                        </a>
+                        <a href="https://github.com/CodingClauds/horoscoped">
+                          <button className="buttonBase__button">Code</button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -266,25 +273,27 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     />
                   </div>
 
-                  <div className="content__photocard-text">
-                    <h3>F1 Stopwatch</h3>
-                    <p>
-                      In this project, I utilized my knowledge of javascript to
-                      add a stopwatch feature that is fully functional and add
-                      flipcards that have the 2022 Driver Lineup.
-                    </p>
-                    <p>
-                      This is where we have to match the pairs, and see who
-                      really knows what it takes to take podium.
-                    </p>
+                  <div className="content__photocard-container">
+                    <div className="content__photocard-content">
+                      <h3>F1 Stopwatch</h3>
+                      <p>
+                        In this project, I utilized my knowledge of javascript
+                        to add a stopwatch feature that is fully functional and
+                        add flipcards that have the 2022 Driver Lineup.
+                      </p>
+                      <p>
+                        This is where we have to match the pairs, and see who
+                        really knows what it takes to take podium.
+                      </p>
 
-                    <div className="buttonBase">
-                      <a href="https://f1-stopwatch.netlify.app/">
-                        <button className="buttonBase__button">Demo</button>
-                      </a>
-                      <a href="https://github.com/CodingClauds/F1-stopwatch">
-                        <button className="buttonBase__button">Code</button>
-                      </a>
+                      <div className="buttonBase">
+                        <a href="https://f1-stopwatch.netlify.app/">
+                          <button className="buttonBase__button">Demo</button>
+                        </a>
+                        <a href="https://github.com/CodingClauds/F1-stopwatch">
+                          <button className="buttonBase__button">Code</button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -303,7 +312,9 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       />
                     </div>
 
-                  <div className="content__photocard-text">
+                  <div className="content__photocard-container">
+                    <div className="content__photocard-content">
+
                     <h3>Title of Project</h3>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -320,13 +331,14 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       obcaecati numquam commodi.
                     </p>
 
-                    <div className="buttonBase">
-                      <a href="https://f1-stopwatch.netlify.app/">
-                        <button className="buttonBase__button">Demo</button>
-                      </a>
-                      <a href="https://github.com/CodingClauds/F1-stopwatch">
-                        <button className="buttonBase__button">Code</button>
-                      </a>
+                      <div className="buttonBase">
+                        <a href="https://f1-stopwatch.netlify.app/">
+                          <button className="buttonBase__button">Demo</button>
+                        </a>
+                        <a href="https://github.com/CodingClauds/F1-stopwatch">
+                          <button className="buttonBase__button">Code</button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
