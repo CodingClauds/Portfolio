@@ -1,10 +1,12 @@
+@use "../../styles/partials/_variables.scss" as *;
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color: #fff;
+  background-color: $primary-white;
 
   .container {
     padding-top: 32px;
@@ -12,10 +14,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: $primary-white;
 
     h2 {
-      color: black;
+      color: $primary-black;
       text-transform: uppercase;
       font-weight: 300;
       letter-spacing: -2.5px;
@@ -38,7 +40,7 @@ header {
       }
 
       a {
-        color: black;
+        color: $primary-black;
         font-size: 20px;
       }
     }
@@ -76,19 +78,11 @@ header {
     width: 0%;
     height: 2px;
     color: transparent;
-    background: rgb(0, 0, 0);
+    background: $primary-black;
     transition: all 0.5s;
   }
   nav ul li span:hover:after {
     width: 100%;
-  }
-
-  .is-scrolling {
-    background-color: #12002f;
-    .container {
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
   }
 }
 
@@ -110,7 +104,7 @@ header {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #000;
+  background-color: $primary-black;
   margin: 6px 0px;
   transition: 0.4s;
   border-radius: 5px;
@@ -159,10 +153,10 @@ header {
   border-radius: 10px;
   cursor: pointer;
   font-size: 32px;
-  color: #fff;
+  color: $primary-white;
 }
 .mobile-navlink:hover {
-  color: rgb(93, 207, 131);
+  color: $selector-green;
 }
 
 @media (min-width: 768px) {
