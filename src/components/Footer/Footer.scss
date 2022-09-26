@@ -2,14 +2,14 @@
 @use "../../styles/partials/_mixins.scss" as *;
 
 .contact {
-  background-color: #285276;
+  background-color: $background-footer;
 
   &__container {
     padding-top: 32px;
     padding-bottom: 64px;
 
     h2 {
-      color: #fff;
+      color: $primary-white;
       padding-bottom: 2rem;
 
       @include tablet {
@@ -31,11 +31,11 @@
   }
 
   &__borderbottom {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $primary-white;
     padding-bottom: 0.5rem;
 
     @include tablet {
-      border-bottom: 4px solid white;
+      border-bottom: 4px solid $primary-white;
       padding-bottom: 1rem;
     }
   }
