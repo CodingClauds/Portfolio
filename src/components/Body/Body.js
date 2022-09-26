@@ -171,21 +171,29 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       alt="webapp homescreen snapshot"
                     />
                   </div>
-                  <a href="https://sproutr.netlify.app/">
-                    <div className="content__photocard-text">
-                      <h3>Sproutr</h3>
-                      <p>
-                        Sproutr is a habit building app that lets you choose &
-                        track a new or existing habit. At Sproutr we are about
-                        helping those create the habits that matter.
-                      </p>
-                      <p>
-                        The approach we decided to take was to create a friendly
-                        and visually appealing app to help those making habits
-                        fun.
-                      </p>
+
+                  <div className="content__photocard-text">
+                    <h3>Sproutr</h3>
+                    <p>
+                      Sproutr is a habit building app that lets you choose &
+                      track a new or existing habit. At Sproutr we are about
+                      helping those create the habits that matter.
+                    </p>
+                    <p>
+                      The approach we decided to take was to create a friendly
+                      and visually appealing app to help those making habits
+                      fun.
+                    </p>
+
+                    <div className="buttonBase">
+                      <a href="https://sproutr.netlify.app/">
+                        <button className="buttonBase__button">Demo</button>
+                      </a>
+                      <a href="https://github.com/CodingClauds/sproutr-capstone">
+                        <button className="buttonBase__button">Code</button>
+                      </a>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
 
@@ -198,21 +206,23 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       alt="webapp homescreen snapshot"
                     />
                   </div>
-                  <a href="https://maesurf.com/">
-                    <div className="content__photocard-text">
-                      <h3>MaeSurf</h3>
-                      <p>
-                        MaeSurf is a surf camp website that is designed to help
-                        travellers book full surf camps and lessons in Costa
-                        Rica.
-                      </p>
-                      <p>
-                        I was tasked with organizing the site that coincides
-                        with the teams vision and adding in key functionalities
-                        to help attract traffic to the site.
-                      </p>
+
+                  <div className="content__photocard-text">
+                    <h3>MaeSurf</h3>
+                    <p>
+                      MaeSurf is a surf camp website that is designed to help
+                      travellers book full surf camps and lessons in Costa Rica.
+                    </p>
+                    <p>
+                      Currently tasked with organizing the site and adding in
+                      key functionalities to help attract traffic to the site.
+                    </p>
+                    <div className="buttonBase">
+                      <a href="https://maesurf.com/">
+                        <button className="buttonBase__button">Demo</button>
+                      </a>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
 
@@ -225,21 +235,24 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       alt="webapp homescreen snapshot"
                     />
                   </div>
-                  <a href="https://hororscoped.netlify.app/">
-                    <div className="content__photocard-text">
-                      <h3>Horoscoped</h3>
-                      <p>
-                        For one of our "mini-hackathons" we created a Horoscope
-                        app that utilizes API’s to retrieve data when an
-                        individual user inputs their specific birthday.
-                      </p>
-                      <p>
-                        As such it will return one of the 12 astrological signs
-                        and a quote that is randomly generated from the API. We
-                        also included a date/time API.
-                      </p>
+
+                  <div className="content__photocard-text">
+                    <h3>Horoscoped</h3>
+                    <p>
+                      For one of our "mini-hackathons" we created a Horoscope
+                      app that utilizes API’s to retrieve data when an
+                      individual user inputs their specific birthday.
+                    </p>
+
+                    <div className="buttonBase">
+                      <a href="https://hororscoped.netlify.app/">
+                        <button className="buttonBase__button">Demo</button>
+                      </a>
+                      <a href="https://github.com/CodingClauds/horoscoped">
+                        <button className="buttonBase__button">Code</button>
+                      </a>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
 
@@ -252,18 +265,28 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       alt="webapp homescreen snapshot"
                     />
                   </div>
-                  <a href="https://f1-stopwatch.netlify.app/">
-                    <div className="content__photocard-text">
-                      <h3>F1 Stopwatch</h3>
-                      <p>
-                        In this project, I utilized my knowledge of javascript
-                        to add a stopwatch feature that is fully functional and
-                        add flipcards that have the 2022 Driver Lineup. This is
-                        where we have to match the pairs, and see who really
-                        knows what it takes to take podium.
-                      </p>
+
+                  <div className="content__photocard-text">
+                    <h3>F1 Stopwatch</h3>
+                    <p>
+                      In this project, I utilized my knowledge of javascript to
+                      add a stopwatch feature that is fully functional and add
+                      flipcards that have the 2022 Driver Lineup.
+                    </p>
+                    <p>
+                      This is where we have to match the pairs, and see who
+                      really knows what it takes to take podium.
+                    </p>
+
+                    <div className="buttonBase">
+                      <a href="https://f1-stopwatch.netlify.app/">
+                        <button className="buttonBase__button">Demo</button>
+                      </a>
+                      <a href="https://github.com/CodingClauds/F1-stopwatch">
+                        <button className="buttonBase__button">Code</button>
+                      </a>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
 
@@ -271,7 +294,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
 
               {/* <div className="project">
                 <div className="content">
-                  <a href="">
+
                     <div className="content__photocard">
                       <img
                         className="content__photocard-img"
@@ -279,7 +302,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                         alt="webapp homescreen snapshot"
                       />
                     </div>
-                  </a>
+
                   <div className="content__photocard-text">
                     <h3>Title of Project</h3>
                     <p>
@@ -296,6 +319,15 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       voluptatibus autem temporibus optio minus! Earum veritatis
                       obcaecati numquam commodi.
                     </p>
+
+                    <div className="buttonBase">
+                      <a href="https://f1-stopwatch.netlify.app/">
+                        <button className="buttonBase__button">Demo</button>
+                      </a>
+                      <a href="https://github.com/CodingClauds/F1-stopwatch">
+                        <button className="buttonBase__button">Code</button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div> */}
