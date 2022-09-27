@@ -172,7 +172,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 5rem;
       }
     }
 
@@ -325,6 +325,7 @@ main {
     :hover {
       opacity: 1;
       transition: 0.6s ease-out;
+      height: fit-content;
     }
 
     &__photocard-content {
@@ -336,7 +337,11 @@ main {
 .buttonBase {
   display: flex;
   justify-content: space-between;
-  max-width: 50%;
+  width: 50%;
+
+  @media (max-width: 425px) {
+    width: 70%;
+  }
 
   &__button {
     @include button;
