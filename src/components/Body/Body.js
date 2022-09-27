@@ -74,7 +74,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
 
         <section>
           <div className="techstack wrapper">
-            <h2 className="techstack__title">tech stack:</h2>
+            <h2 className="techstack__title">tech stack</h2>
             <div className="techstack__services-grid">
               <div className="techstack__service">
                 <img
