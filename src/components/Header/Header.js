@@ -11,25 +11,21 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
       }
     });
 
-    // Create variables and append class, to allow all our functionality to stem from these.
     const menuButton = document.querySelector(".hamburger");
     const mobileMenu = document.querySelector(".mobile-nav");
 
-    // Create toggle function
     function toggleMenu() {
       menuButton.classList.toggle("is-active");
       mobileMenu.classList.toggle("is-active");
     }
 
-    // When user clicks menu, toggle function is executed.
     menuButton.addEventListener("click", function () {
       toggleMenu();
     });
 
-    // Create variable and append, this will be when user clicks individual item in the mobile view. Mobile Screen shifts out of view.
     const menuItems = document.querySelectorAll(".menuItem");
 
-    // When user clicks ANY menuItem, mobile screen disappears.
+    // When user clicks ANY menuItem, scrolls into view and mobile nav disappears.
     menuItems.forEach(function (menuItem) {
       menuItem.addEventListener("click", function () {
         toggleMenu();
@@ -39,7 +35,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
 
   return (
     <>
-      <header className="is-scrolling">
+      <header>
         <div className="container wrapper">
           <a href="/">
             <h2>Claudio Miranda</h2>
@@ -81,7 +77,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
         </div>
       </header>
 
-      <nav className="mobile-nav is-scrolling">
+      <nav className="mobile-nav">
         <ul className="mobile-nav__menu">
           <li className="menuItem">
             <span
