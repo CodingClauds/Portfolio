@@ -160,7 +160,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
         <section className="projects wrapper" id="projects" ref={myRefProjects}>
           <div className="container">
             <h2>Projects</h2>
-            <h3 className="test">Check out some of my recent work:</h3>
+            <h3 className="test">Click to view my recent work:</h3>
 
             <div className="projects-grid">
               <div className="project">
