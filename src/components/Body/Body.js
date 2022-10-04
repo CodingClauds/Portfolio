@@ -50,7 +50,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     Hello, my name is Claudio! I decided to pivot into tech and
                     take the plunge after 7 years in the automotive industry.
                     Initially working as a registered tool-maker, further
-                    narrowed down specifically into robotics and automation.
+                    narrowed down into robotics and automation.
                   </p>
                   <p className="about__inner-text">
                     This was where I got my first taste for programming and
@@ -160,6 +160,7 @@ export default function Body({ myRefAbout, myRefProjects }) {
         <section className="projects wrapper" id="projects" ref={myRefProjects}>
           <div className="container">
             <h2>Projects</h2>
+            <h3 className="test">Check out some of my recent work:</h3>
 
             <div className="projects-grid">
               <div className="project">
@@ -247,7 +248,8 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       <p>
                         For one of our "mini-hackathons" we created a Horoscope
                         app that utilizes API’s to retrieve data when an
-                        individual user inputs their specific birthday.
+                        individual user inputs their zodiac sign or their
+                        specific birthday.
                       </p>
 
                       <div className="buttonBase">
