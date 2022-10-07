@@ -15,7 +15,7 @@ import NpmIcon from "../../assets/images/techstack/npm.svg";
 import Horoscope from "../../assets/images/horoscope.png";
 import Maesurf from "../../assets/images/maesurf.png";
 import Sproutr from "../../assets/images/sproutr.png";
-import F1 from "../../assets/images/f1stopwatch.png";
+import F1 from "../../assets/images/screengrab.png";
 
 export default function Body({ myRefAbout, myRefProjects }) {
   return (
