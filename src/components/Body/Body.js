@@ -247,8 +247,11 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       <p>
                         For one of our "mini-hackathons" we created a Horoscope
                         app that utilizes API’s to retrieve data when an
-                        individual user inputs their specific birthday.
+                        individual user inputs their zodiac sign or their
+                        specific birthday.
                       </p>
+
+                      <br></br>
 
                       <div className="buttonBase">
                         <a href="https://hororscoped.netlify.app/">
@@ -277,17 +280,14 @@ export default function Body({ myRefAbout, myRefProjects }) {
                     <div className="content__photocard-content">
                       <h3>F1 Stopwatch</h3>
                       <p>
-                        In this project, I utilized my knowledge of javascript
-                        to add a stopwatch feature that is fully functional and
-                        add flipcards that have the 2022 Driver Lineup.
-                      </p>
-                      <p>
-                        This is where we have to match the pairs, and see who
-                        really knows what it takes to take podium.
+                        Here's the Formula-1 themed flipcard game with all 20
+                        drivers from the 2022 driver lineup, try to match the
+                        drivers with their teams before the time runs out! Let's
+                        see if you have what it takes to have a podium finish.
                       </p>
 
                       <div className="buttonBase">
-                        <a href="https://f1-stopwatch.netlify.app/">
+                        <a href="https://flipcardformula1.netlify.app/">
                           <button className="buttonBase__button">Demo</button>
                         </a>
                         <a href="https://github.com/CodingClauds/F1-stopwatch">
