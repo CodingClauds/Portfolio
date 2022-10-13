@@ -15,7 +15,8 @@ import NpmIcon from "../../assets/images/techstack/npm.svg";
 import Horoscope from "../../assets/images/horoscope.png";
 import Maesurf from "../../assets/images/maesurf.png";
 import Sproutr from "../../assets/images/sproutr.png";
-import F1 from "../../assets/images/screengrab.png";
+import F1 from "../../assets/images/f1stopwatch.png";
+import DarkMode from "../../assets/images/dark-light-mode.png";
 
 export default function Body({ myRefAbout, myRefProjects }) {
   return (
@@ -292,6 +293,41 @@ export default function Body({ myRefAbout, myRefProjects }) {
                           <button className="buttonBase__button">Demo</button>
                         </a>
                         <a href="https://github.com/CodingClauds/F1-stopwatch">
+                          <button className="buttonBase__button">Code</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="project">
+                <div className="content">
+                  <div className="content__photocard">
+                    <img
+                      className="content__photocard-img"
+                      src={DarkMode}
+                      alt="webapp homescreen snapshot"
+                    />
+                  </div>
+
+                  <div className="content__photocard-container">
+                    <div className="content__photocard-content">
+                      <h3>Dark/Light Mode</h3>
+                      <p>
+                        For this challenge, I wanted to implement a light and
+                        dark mode switch toggle that would change the colours or
+                        invert the colours from the default to dark mode for
+                        this basic stopwatch component. The method I used was
+                        creating variables for the two color states, and adding
+                        the toggle on those two throughout.
+                      </p>
+
+                      <div className="buttonBase">
+                        <a href="https://dark-light-mode-stopwatch.netlify.app/">
+                          <button className="buttonBase__button">Demo</button>
+                        </a>
+                        <a href="https://github.com/CodingClauds/Dark-light-Mode-StopWatch">
                           <button className="buttonBase__button">Code</button>
                         </a>
                       </div>
