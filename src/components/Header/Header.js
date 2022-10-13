@@ -1,9 +1,9 @@
 import "./Header.scss";
 
 function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
-  window.onload = function () {
+  window.onload = () => {
     // Scroll function executes when user clicks menu item.
-    window.addEventListener("scroll", function (e) {
+    window.addEventListener("scroll", (e) => {
       if (window.pageYOffset > 100) {
         document.querySelector("header").classList.add("is-scrolling");
       } else {
@@ -19,7 +19,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
       mobileMenu.classList.toggle("is-active");
     }
 
-    menuButton.addEventListener("click", function () {
+    menuButton.addEventListener("click", () => {
       toggleMenu();
     });
 
@@ -27,7 +27,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
 
     // When user clicks ANY menuItem, scrolls into view and mobile nav disappears.
     menuItems.forEach(function (menuItem) {
-      menuItem.addEventListener("click", function () {
+      menuItem.addEventListener("click", () => {
         toggleMenu();
       });
     });
