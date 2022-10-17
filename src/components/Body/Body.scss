@@ -260,7 +260,13 @@ main {
   padding-top: 64px;
   padding-bottom: 64px;
 
-  .projects-grid {
+  &__title {
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  .projects__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -346,6 +352,10 @@ main {
 
   &__button {
     @include button;
+    text-align: center;
+    font-size: 14px;
+    color: $primary-black;
+    background-color: $primary-white;
 
     &:hover {
       color: $primary-white;
@@ -353,10 +363,4 @@ main {
       transition: 0.6s ease-out;
     }
   }
-}
-
-.test {
-  margin-bottom: 2rem;
-  text-transform: capitalize;
-  font-weight: 400;
 }

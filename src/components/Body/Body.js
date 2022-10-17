@@ -161,9 +161,9 @@ export default function Body({ myRefAbout, myRefProjects }) {
         <section className="projects wrapper" id="projects" ref={myRefProjects}>
           <div className="container">
             <h2>Projects</h2>
-            <h3 className="test">Click to view my recent work:</h3>
+            <h3 className="projects__title">Click to view my recent work:</h3>
 
-            <div className="projects-grid">
+            <div className="projects__grid">
               <div className="project">
                 <div className="content">
                   <div className="content__photocard">
@@ -189,11 +189,17 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       </p>
 
                       <div className="buttonBase">
-                        <a href="https://sproutr.netlify.app/">
-                          <button className="buttonBase__button">Demo</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://sproutr.netlify.app/"
+                        >
+                          Demo
                         </a>
-                        <a href="https://github.com/CodingClauds/sproutr-capstone">
-                          <button className="buttonBase__button">Code</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://github.com/CodingClauds/sproutr-capstone"
+                        >
+                          Code
                         </a>
                       </div>
                     </div>
@@ -224,8 +230,11 @@ export default function Body({ myRefAbout, myRefProjects }) {
                         key functionalities to help attract traffic to the site.
                       </p>
                       <div className="buttonBase">
-                        <a href="https://maesurf.com/">
-                          <button className="buttonBase__button">Demo</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://maesurf.com/"
+                        >
+                          Demo
                         </a>
                       </div>
                     </div>
@@ -256,11 +265,17 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       <br></br>
 
                       <div className="buttonBase">
-                        <a href="https://hororscoped.netlify.app/">
-                          <button className="buttonBase__button">Demo</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://hororscoped.netlify.app/"
+                        >
+                          Demo
                         </a>
-                        <a href="https://github.com/CodingClauds/horoscoped">
-                          <button className="buttonBase__button">Code</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://github.com/CodingClauds/horoscoped"
+                        >
+                          Code
                         </a>
                       </div>
                     </div>
@@ -289,11 +304,17 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       </p>
 
                       <div className="buttonBase">
-                        <a href="https://flipcardformula1.netlify.app/">
-                          <button className="buttonBase__button">Demo</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://flipcardformula1.netlify.app/"
+                        >
+                          Demo
                         </a>
-                        <a href="https://github.com/CodingClauds/F1-stopwatch">
-                          <button className="buttonBase__button">Code</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://github.com/CodingClauds/F1-stopwatch"
+                        >
+                          Code
                         </a>
                       </div>
                     </div>
@@ -324,11 +345,17 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       </p>
 
                       <div className="buttonBase">
-                        <a href="https://dark-light-mode-stopwatch.netlify.app/">
-                          <button className="buttonBase__button">Demo</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://dark-light-mode-stopwatch.netlify.app/"
+                        >
+                          Demo
                         </a>
-                        <a href="https://github.com/CodingClauds/Dark-light-Mode-StopWatch">
-                          <button className="buttonBase__button">Code</button>
+                        <a
+                          className="buttonBase__button"
+                          href="https://github.com/CodingClauds/Dark-light-Mode-StopWatch"
+                        >
+                          Code
                         </a>
                       </div>
                     </div>
