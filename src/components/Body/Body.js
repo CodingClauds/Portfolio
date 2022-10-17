@@ -188,15 +188,15 @@ export default function Body({ myRefAbout, myRefProjects }) {
                         fun.
                       </p>
 
-                      <div className="buttonBase">
+                      <div className="button">
                         <a
-                          className="buttonBase__button"
+                          className="button__link"
                           href="https://sproutr.netlify.app/"
                         >
                           Demo
                         </a>
                         <a
-                          className="buttonBase__button"
+                          className="button__link"
                           href="https://github.com/CodingClauds/sproutr-capstone"
                         >
                           Code
@@ -229,11 +229,8 @@ export default function Body({ myRefAbout, myRefProjects }) {
                         Currently tasked with organizing the site and adding in
                         key functionalities to help attract traffic to the site.
                       </p>
-                      <div className="buttonBase">
-                        <a
-                          className="buttonBase__button"
-                          href="https://maesurf.com/"
-                        >
+                      <div className="button">
+                        <a className="button__link" href="https://maesurf.com/">
                           Demo
                         </a>
                       </div>
@@ -264,15 +261,15 @@ export default function Body({ myRefAbout, myRefProjects }) {
 
                       <br></br>
 
-                      <div className="buttonBase">
+                      <div className="button">
                         <a
-                          className="buttonBase__button"
+                          className="button__link"
                           href="https://hororscoped.netlify.app/"
                         >
                           Demo
                         </a>
                         <a
-                          className="buttonBase__button"
+                          className="button__link"
                           href="https://github.com/CodingClauds/horoscoped"
                         >
                           Code
@@ -303,15 +300,15 @@ export default function Body({ myRefAbout, myRefProjects }) {
                         see if you have what it takes to have a podium finish.
                       </p>
 
-                      <div className="buttonBase">
+                      <div className="button">
                         <a
-                          className="buttonBase__button"
+                          className="button__link"
                           href="https://flipcardformula1.netlify.app/"
                         >
                           Demo
                         </a>
                         <a
-                          className="buttonBase__button"
+                          className="button__link"
                           href="https://github.com/CodingClauds/F1-stopwatch"
                         >
                           Code
@@ -344,15 +341,15 @@ export default function Body({ myRefAbout, myRefProjects }) {
                         the toggle on those two throughout.
                       </p>
 
-                      <div className="buttonBase">
+                      <div className="button">
                         <a
-                          className="buttonBase__button"
+                          className="button__link"
                           href="https://dark-light-mode-stopwatch.netlify.app/"
                         >
                           Demo
                         </a>
                         <a
-                          className="buttonBase__button"
+                          className="button__link"
                           href="https://github.com/CodingClauds/Dark-light-Mode-StopWatch"
                         >
                           Code
@@ -395,12 +392,12 @@ export default function Body({ myRefAbout, myRefProjects }) {
                       obcaecati numquam commodi.
                     </p>
 
-                      <div className="buttonBase">
+                      <div className="button">
                         <a href="https://f1-stopwatch.netlify.app/">
-                          <button className="buttonBase__button">Demo</button>
+                          <button className="button__link">Demo</button>
                         </a>
                         <a href="https://github.com/CodingClauds/F1-stopwatch">
-                          <button className="buttonBase__button">Code</button>
+                          <button className="button__link">Code</button>
                         </a>
                       </div>
                     </div>

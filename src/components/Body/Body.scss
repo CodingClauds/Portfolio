@@ -340,7 +340,7 @@ main {
   }
 }
 
-.buttonBase {
+.button {
   display: flex;
   justify-content: space-between;
   width: 50%;
@@ -350,7 +350,7 @@ main {
     width: 70%;
   }
 
-  &__button {
+  &__link {
     @include button;
     text-align: center;
     font-size: 14px;
