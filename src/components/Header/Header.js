@@ -18,7 +18,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
   return (
     <>
       <header>
-        <div className="container wrapper">
+        <div className="container">
           <a href="/">
             <h2>Claudio Miranda</h2>
           </a>

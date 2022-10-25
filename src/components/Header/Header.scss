@@ -9,13 +9,14 @@ header {
   background-color: $primary-white;
 
   .container {
-    padding-top: 32px;
-    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $primary-white;
     box-shadow: 0 4px 20px -1px rgb(0 0 0 / 40%);
+    padding: 0 3rem;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     h2 {
       color: $primary-black;
