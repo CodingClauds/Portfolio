@@ -3,7 +3,7 @@ import "./Techstack.scss";
 
 import { db } from "../../assets/database/techdb.js";
 
-export function Techstack() {
+export default function Techstack() {
   return (
     <div className="techstack wrapper">
       <h2 className="techstack__title">tech stack</h2>

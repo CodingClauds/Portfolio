@@ -7,7 +7,7 @@ import Sproutr from "../../assets/images/projects/sproutr.png";
 import F1 from "../../assets/images/projects/f1stopwatch.png";
 import DarkMode from "../../assets/images/projects/dark-light-mode.png";
 
-function Projects() {
+export default function Projects() {
   return (
     <div className="projects wrapper">
       <div className="container">
@@ -212,5 +212,3 @@ function Projects() {
     </div>
   );
 }
-
-export default Projects;
