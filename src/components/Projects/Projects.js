@@ -1,11 +1,11 @@
 import React from "react";
 import "./Projects.scss";
 
-import Horoscope from "../../assets/images/horoscope.png";
-import Maesurf from "../../assets/images/maesurf.png";
-import Sproutr from "../../assets/images/sproutr.png";
-import F1 from "../../assets/images/f1stopwatch.png";
-import DarkMode from "../../assets/images/dark-light-mode.png";
+import Horoscope from "../../assets/images/projects/horoscope.png";
+import Maesurf from "../../assets/images/projects/maesurf.png";
+import Sproutr from "../../assets/images/projects/sproutr.png";
+import F1 from "../../assets/images/projects/f1stopwatch.png";
+import DarkMode from "../../assets/images/projects/dark-light-mode.png";
 
 function Projects() {
   return (
@@ -14,7 +14,7 @@ function Projects() {
         <h2>Projects</h2>
         <h3 className="projects__title">Click to view my recent work:</h3>
 
-        <div className="projects__grid">
+        <section className="projects__grid">
           <div className="project">
             <div className="content">
               <div className="content__photocard">
@@ -207,52 +207,7 @@ function Projects() {
               </div>
             </div>
           </div>
-
-          {/* ========================Template for Future Projects ======================= */}
-
-          {/* <div className="project">
-      <div className="content">
-
-          <div className="content__photocard">
-            <img
-              className="content__photocard-img"
-              src={}
-              alt="webapp homescreen snapshot"
-            />
-          </div>
-
-        <div className="content__photocard-container">
-          <div className="content__photocard-content">
-
-          <h3>Title of Project</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Molestias exercitationem veniam nihil aspernatur voluptas
-            placeat mollitia? Voluptates magni et laudantium
-            voluptatibus autem temporibus optio minus! Earum veritatis
-            obcaecati numquam commodi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Molestias exercitationem veniam nihil aspernatur voluptas
-            placeat mollitia? Voluptates magni et laudantium
-            voluptatibus autem temporibus optio minus! Earum veritatis
-            obcaecati numquam commodi.
-          </p>
-
-            <div className="button">
-              <a href="https://f1-stopwatch.netlify.app/">
-                <button className="button__link">Demo</button>
-              </a>
-              <a href="https://github.com/CodingClauds/F1-stopwatch">
-                <button className="button__link">Code</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
-        </div>
+        </section>
       </div>
     </div>
   );
