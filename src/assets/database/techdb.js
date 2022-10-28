@@ -1,21 +1,22 @@
 // Techstack assets
-import ReactIcon from "../../assets/images/techstack/react.svg";
-import HtmlIcon from "../../assets/images/techstack/html5.svg";
-import CssIcon from "../../assets/images/techstack/css3.svg";
-import SassIcon from "../../assets/images/techstack/sass.svg";
-import JsIcon from "../../assets/images/techstack/javascript.svg";
-import FirebaseIcon from "../../assets/images/techstack/firebase.png";
-import GithubIcon from "../../assets/images/techstack/github.svg";
-import RouterIcon from "../../assets/images/techstack/reactrouter.svg";
-import AxiosIcon from "../../assets/images/techstack/axios.svg";
-import NpmIcon from "../../assets/images/techstack/npm.svg";
+import ReactIcon from "../images/techstack/react.svg";
+import HtmlIcon from "../images/techstack/html5.svg";
+import CssIcon from "../images/techstack/css3.svg";
+import SassIcon from "../images/techstack/sass.svg";
+import JsIcon from "../images/techstack/javascript.svg";
+import FirebaseIcon from "../images/techstack/firebase.png";
+import GithubIcon from "../images/techstack/github.svg";
+import RouterIcon from "../images/techstack/reactrouter.svg";
+import AxiosIcon from "../images/techstack/axios.svg";
+import NpmIcon from "../images/techstack/npm.svg";
 
 // Projects assets
-import Horoscope from "../../assets/images/projects/horoscope.png";
-import Maesurf from "../../assets/images/projects/maesurf.png";
-import Sproutr from "../../assets/images/projects/sproutr.png";
-import F1 from "../../assets/images/projects/f1stopwatch.png";
-import DarkMode from "../../assets/images/projects/dark-light-mode.png";
+import Horoscope from "../images/projects/horoscope.png";
+import Maesurf from "../images/projects/maesurf.png";
+import Sproutr from "../images/projects/sproutr.png";
+import F1 from "../images/projects/f1stopwatch.png";
+import DarkMode from "../images/projects/dark-light-mode.png";
+import Login from "../images/projects/login.png";
 
 export const db = [
   { src: ReactIcon },
@@ -89,6 +90,18 @@ export const projectCard = [
     },
     button: {
       demoURL: "https://maesurf.com/",
+    },
+  },
+  {
+    src: Login,
+    textContent: {
+      title: "LogIn",
+      description:
+        "I focused on building out a login component, that emulates a sign in with error handling and a admin login that will bring you to a new page. This is currently done in a naive approach, but the point still stands. Its meant to show how the path would go from a sign in to a logged in page.",
+    },
+    button: {
+      demoURL: "https://consolelogin.netlify.app/",
+      codeURL: "https://github.com/CodingClauds/React-Login",
     },
   },
 ];
