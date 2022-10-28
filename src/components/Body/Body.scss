@@ -194,28 +194,3 @@ main {
     }
   }
 }
-
-.button {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  gap: 1rem;
-
-  @media (max-width: 425px) {
-    width: 70%;
-  }
-
-  &__link {
-    @include button;
-    text-align: center;
-    font-size: 14px;
-    color: $primary-black;
-    background-color: $primary-white;
-
-    &:hover {
-      color: $primary-white;
-      background-color: $primary-black;
-      transition: 0.6s ease-out;
-    }
-  }
-}
