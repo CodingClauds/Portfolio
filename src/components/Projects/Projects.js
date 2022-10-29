@@ -8,7 +8,7 @@ export default function Projects() {
     <div className="projects wrapper">
       <div className="container">
         <h2>Projects</h2>
-        <h3 className="projects__title">Click to view my recent work:</h3>
+        <h3 className="projects__cta">Click to view my recent work:</h3>
 
         <section className="projects__grid">
           {projectCard.map(
@@ -28,7 +28,7 @@ export default function Projects() {
                       />
                     </div>
 
-                    <div className="content__photocard-container">
+                    <div className="content__overlay">
                       <div className="content__photocard-content">
                         <h3>{title}</h3>
                         <p>{description}</p>
