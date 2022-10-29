@@ -1,4 +1,4 @@
-// --------------------------- Mixins ------------------>
+// --------------------------- Min-Widths ------------------>
 
 @mixin tablet {
   @media screen and (min-width: 768px) {
@@ -12,6 +12,21 @@
   }
 }
 
+// --------------------------- Max-Widths ------------------>
+
+@mixin maxTablet {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin maxDesktop {
+  @media screen and (max-width: 2000px) {
+    @content;
+  }
+}
+
+// --------------------------- Components ------------------>
 @mixin button {
   width: 5rem;
   padding: 0.6rem;
@@ -20,5 +35,3 @@
   border: none;
   border-radius: 24px;
 }
-
-// --------------------------- Mixins ------------------>
