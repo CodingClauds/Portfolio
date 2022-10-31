@@ -26,12 +26,13 @@ html {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding-left: 128px;
-  padding-right: 128px;
+
+  padding-left: 64px;
+  padding-right: 64px;
 
   @media (max-width: 1024px) {
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 88px;
+    padding-right: 88px;
   }
 
   @media (max-width: 767px) {
