@@ -9,6 +9,8 @@ import GithubIcon from "../images/techstack/github.svg";
 import RouterIcon from "../images/techstack/reactrouter.svg";
 import AxiosIcon from "../images/techstack/axios.svg";
 import NpmIcon from "../images/techstack/npm.svg";
+import JiraIcon from "../images/techstack/jira-svgrepo-com.svg";
+import FigmaaIcon from "../images/techstack/figma-svgrepo-com.svg";
 
 // Projects assets
 import Horoscope from "../images/projects/horoscope.png";
@@ -29,6 +31,8 @@ export const db = [
   { src: RouterIcon },
   { src: AxiosIcon },
   { src: NpmIcon },
+  { src: JiraIcon },
+  { src: FigmaaIcon },
 ];
 
 export const projectCard = [
