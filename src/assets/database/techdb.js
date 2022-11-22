@@ -9,8 +9,10 @@ import GithubIcon from "../images/techstack/github.svg";
 import RouterIcon from "../images/techstack/reactrouter.svg";
 import AxiosIcon from "../images/techstack/axios.svg";
 import NpmIcon from "../images/techstack/npm.svg";
-import JiraIcon from "../images/techstack/jira-svgrepo-com.svg";
-import FigmaaIcon from "../images/techstack/figma-svgrepo-com.svg";
+import JiraIcon from "../images/techstack/jira.svg";
+import FigmaIcon from "../images/techstack/figma.svg";
+import ExpressIcon from "../images/techstack/expressjs.svg";
+import NodeIcon from "../images/techstack/node.svg";
 
 // Projects assets
 import Horoscope from "../images/projects/horoscope.png";
@@ -26,13 +28,15 @@ export const db = [
   { src: CssIcon },
   { src: SassIcon },
   { src: JsIcon },
-  { src: FirebaseIcon },
-  { src: GithubIcon },
   { src: RouterIcon },
   { src: AxiosIcon },
   { src: NpmIcon },
+  { src: FirebaseIcon },
+  { src: ExpressIcon },
+  { src: NodeIcon },
   { src: JiraIcon },
-  { src: FigmaaIcon },
+  { src: FigmaIcon },
+  { src: GithubIcon },
 ];
 
 export const projectCard = [
