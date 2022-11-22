@@ -13,12 +13,13 @@ export default function Projects() {
         <section className="projects__grid">
           {projectCard.map(
             ({
+              id,
               src,
               textContent: { title, description },
               button: { codeURL, demoURL },
             }) => {
               return (
-                <div className="project">
+                <div className="project" key={id}>
                   <div className="content">
                     <div className="content__photocard">
                       <img

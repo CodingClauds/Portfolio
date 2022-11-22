@@ -9,9 +9,9 @@ export default function Techstack() {
       <h2 className="techstack__title">tech stack</h2>
 
       <div className="techstack__services-grid">
-        {db.map(({ src }) => {
+        {db.map(({ src, id }) => {
           return (
-            <div className="techstack__service">
+            <div className="techstack__service" key={id}>
               <img
                 src={src}
                 alt="techstack badge"

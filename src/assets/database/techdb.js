@@ -22,25 +22,28 @@ import DarkMode from "../images/projects/dark-light-mode.png";
 import Login from "../images/projects/login.png";
 // import Maesurf from "../images/projects/maesurf.png";
 
+const { v4: uuidv4 } = require("uuid");
+
 export const db = [
-  { src: ReactIcon },
-  { src: HtmlIcon },
-  { src: CssIcon },
-  { src: SassIcon },
-  { src: JsIcon },
-  { src: RouterIcon },
-  { src: AxiosIcon },
-  { src: NpmIcon },
-  { src: FirebaseIcon },
-  { src: ExpressIcon },
-  { src: NodeIcon },
-  { src: JiraIcon },
-  { src: FigmaIcon },
-  { src: GithubIcon },
+  { id: uuidv4(), src: ReactIcon },
+  { id: uuidv4(), src: HtmlIcon },
+  { id: uuidv4(), src: CssIcon },
+  { id: uuidv4(), src: SassIcon },
+  { id: uuidv4(), src: JsIcon },
+  { id: uuidv4(), src: RouterIcon },
+  { id: uuidv4(), src: AxiosIcon },
+  { id: uuidv4(), src: NpmIcon },
+  { id: uuidv4(), src: FirebaseIcon },
+  { id: uuidv4(), src: ExpressIcon },
+  { id: uuidv4(), src: NodeIcon },
+  { id: uuidv4(), src: JiraIcon },
+  { id: uuidv4(), src: FigmaIcon },
+  { id: uuidv4(), src: GithubIcon },
 ];
 
 export const projectCard = [
   {
+    id: uuidv4(),
     src: Horoscope,
     textContent: {
       title: "Horoscoped",
@@ -53,6 +56,7 @@ export const projectCard = [
     },
   },
   {
+    id: uuidv4(),
     src: F1,
     textContent: {
       title: "F1 Flipcard",
@@ -64,6 +68,7 @@ export const projectCard = [
     },
   },
   {
+    id: uuidv4(),
     src: Sproutr,
     textContent: {
       title: "Sproutr",
@@ -75,6 +80,7 @@ export const projectCard = [
     },
   },
   {
+    id: uuidv4(),
     src: DarkMode,
     textContent: {
       title: "DarkMode",
@@ -96,6 +102,7 @@ export const projectCard = [
   //   },
   // },
   {
+    id: uuidv4(),
     src: Login,
     textContent: {
       title: "LogIn",
