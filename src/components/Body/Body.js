@@ -47,10 +47,11 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   </p>
                   <p className="about__inner-text">
                     I was born in Canada but my background is Portuguese, I have
-                    dual citizenship and I can speak fluently. When I am not at
-                    my desk you'll most likely catch me biking around in the
-                    sun, rock climbing or cooking away for friends while having
-                    them tell me all about the latest local eats.
+                    dual citizenship and I speak fluently. I guess you could say
+                    I have a love for languages.. learning to understand both
+                    human and machine. When I am not at my desk you can catch me
+                    biking around in the sun, rock climbing or cooking away for
+                    friends while listening for the next local eats.
                   </p>
                 </div>
               </div>
