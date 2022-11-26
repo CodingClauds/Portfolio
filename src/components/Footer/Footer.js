@@ -39,8 +39,7 @@ export default function Footer({ myRefContact }) {
 
           <div className="contact__acknowledgements">
             <span className="contact__copyright">
-              Claudio Miranda © All Rights Reserved{" "}
-              <span id="copyright-year">{today}</span>
+              Claudio Miranda © <span id="copyright-year">{today}</span>
             </span>
           </div>
         </div>
