@@ -13,6 +13,9 @@ import JiraIcon from "../images/techstack/jira.svg";
 import FigmaIcon from "../images/techstack/figma.svg";
 import ExpressIcon from "../images/techstack/expressjs.svg";
 import NodeIcon from "../images/techstack/node.svg";
+import TerminalIcon from "../images/techstack/terminal.png";
+import ApiIcon from "../images/techstack/api.png";
+import NetlifyIcon from "../images/techstack/netlify.svg";
 
 // Projects assets
 import Horoscope from "../images/projects/horoscope.png";
@@ -30,14 +33,17 @@ export const db = [
   { id: uuidv4(), src: CssIcon },
   { id: uuidv4(), src: SassIcon },
   { id: uuidv4(), src: JsIcon },
-  { id: uuidv4(), src: RouterIcon },
-  { id: uuidv4(), src: AxiosIcon },
   { id: uuidv4(), src: NpmIcon },
-  { id: uuidv4(), src: FirebaseIcon },
-  { id: uuidv4(), src: ExpressIcon },
   { id: uuidv4(), src: NodeIcon },
+  { id: uuidv4(), src: ExpressIcon },
+  { id: uuidv4(), src: AxiosIcon },
+  { id: uuidv4(), src: RouterIcon },
+  { id: uuidv4(), src: ApiIcon },
+  { id: uuidv4(), src: FirebaseIcon },
   { id: uuidv4(), src: JiraIcon },
   { id: uuidv4(), src: FigmaIcon },
+  { id: uuidv4(), src: NetlifyIcon },
+  { id: uuidv4(), src: TerminalIcon },
   { id: uuidv4(), src: GithubIcon },
 ];
 
