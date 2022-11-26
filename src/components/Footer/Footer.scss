@@ -51,10 +51,7 @@
     margin: 3rem 0;
 
     @include tablet {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 3rem 0;
+      justify-content: flex-end;
     }
   }
 
@@ -68,7 +65,7 @@
     width: 3.5rem;
 
     @include tablet {
-      width: 5rem;
+      width: 4rem;
     }
   }
 
