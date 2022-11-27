@@ -35,8 +35,9 @@ export default function Body({ myRefAbout, myRefProjects }) {
                   <p className="about__inner-text">
                     Hello, my name is Claudio! I decided to pivot into tech and
                     take the plunge after 7 years in the automotive industry.
-                    Initially working as a registered tool-maker, further
-                    narrowed down into robotics and automation.
+                    Working as a registered tool-maker for one of the major OEM
+                    direct suppliers, I narrowed down into robotics and
+                    automation.
                   </p>
                   <p className="about__inner-text">
                     This was where I got my first taste for programming and
