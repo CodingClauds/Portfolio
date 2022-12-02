@@ -15,10 +15,9 @@
   // sizing the techstack icon itself
   &__icon {
     width: 7rem;
-
-    @media (max-width: 425px) {
-      width: 5rem;
-    }
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
   }
 
   &__services-grid {
