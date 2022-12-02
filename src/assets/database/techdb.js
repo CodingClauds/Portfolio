@@ -9,6 +9,7 @@ import GithubIcon from "../images/techstack/github.svg";
 import RouterIcon from "../images/techstack/reactrouter.svg";
 import AxiosIcon from "../images/techstack/axios.svg";
 import NpmIcon from "../images/techstack/npm.svg";
+import YarnIcon from "../images/techstack/yarn.svg";
 import JiraIcon from "../images/techstack/jira.svg";
 import FigmaIcon from "../images/techstack/figma.svg";
 import ExpressIcon from "../images/techstack/expressjs.svg";
@@ -34,6 +35,7 @@ export const db = [
   { id: uuidv4(), src: SassIcon },
   { id: uuidv4(), src: JsIcon },
   { id: uuidv4(), src: NpmIcon },
+  { id: uuidv4(), src: YarnIcon },
   { id: uuidv4(), src: NodeIcon },
   { id: uuidv4(), src: ExpressIcon },
   { id: uuidv4(), src: AxiosIcon },
