@@ -1,6 +1,6 @@
 .timeline-container {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 }
 
 .timeline {
@@ -21,7 +21,7 @@
 
 @media (max-width: 767px) {
   .timeline {
-    max-width: 98%;
+    max-width: 80%;
     padding: 25px;
   }
 }
