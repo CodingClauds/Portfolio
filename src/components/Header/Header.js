@@ -30,16 +30,27 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
                   onClick={() => executeScroll(myRefAbout)}
                   href="about-me"
                 >
-                  About
+                  about
                 </span>
               </li>
+
+              <li>
+                <span
+                  className="nav-link"
+                  onClick={() => executeScroll(myRefAbout)}
+                  href="about-me"
+                >
+                  roadmap
+                </span>
+              </li>
+
               <li>
                 <span
                   className="nav-link"
                   onClick={() => executeScroll(myRefProjects)}
                   href="projects"
                 >
-                  Projects
+                  projects
                 </span>
               </li>
               <li>
@@ -48,7 +59,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
                   onClick={() => executeScroll(myRefContact)}
                   href="contact"
                 >
-                  Contact
+                  contact
                 </span>
               </li>
             </ul>
@@ -69,7 +80,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
               onClick={() => executeScroll(myRefAbout)}
               href="about-me"
             >
-              About
+              about
             </span>
           </li>
           <li className="menuItem" onClick={toggleMenu}>
@@ -78,7 +89,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
               onClick={() => executeScroll(myRefProjects)}
               href="projects"
             >
-              Projects
+              projects
             </span>
           </li>
           <li className="menuItem" onClick={toggleMenu}>
@@ -87,7 +98,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
               onClick={() => executeScroll(myRefContact)}
               href="contact"
             >
-              Contact
+              contact
             </span>
           </li>
         </ul>
