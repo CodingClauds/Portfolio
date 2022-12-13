@@ -7,6 +7,7 @@ import { useRef } from "react";
 
 function App() {
   const myRefAbout = useRef(null);
+  const myRefRoadmap = useRef(null);
   const myRefProjects = useRef(null);
   const myRefContact = useRef(null);
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <Header
         myRefAbout={myRefAbout}
+        myRefRoadmap={myRefRoadmap}
         myRefProjects={myRefProjects}
         myRefContact={myRefContact}
         executeScroll={executeScroll}

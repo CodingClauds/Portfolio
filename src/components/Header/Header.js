@@ -1,7 +1,13 @@
 import "./Header.scss";
 import { useState } from "react";
 
-function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
+function Header({
+  executeScroll,
+  myRefAbout,
+  myRefRoadmap,
+  myRefProjects,
+  myRefContact,
+}) {
   const [menuButton, setMenuButton] = useState("");
   const [hamburger, setIsHamburgerActive] = useState("");
 
@@ -37,7 +43,7 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
               <li>
                 <span
                   className="nav-link"
-                  onClick={() => executeScroll(myRefAbout)}
+                  onClick={() => executeScroll(myRefRoadmap)}
                   href="about-me"
                 >
                   roadmap
@@ -81,6 +87,16 @@ function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
               href="about-me"
             >
               about
+            </span>
+          </li>
+
+          <li className="menuItem" onClick={toggleMenu}>
+            <span
+              className="mobile-navlink"
+              onClick={() => executeScroll(myRefRoadmap)}
+              href="roadmap"
+            >
+              roadmap
             </span>
           </li>
           <li className="menuItem" onClick={toggleMenu}>
