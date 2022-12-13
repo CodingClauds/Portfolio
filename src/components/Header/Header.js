@@ -4,8 +4,8 @@ import { useState } from "react";
 function Header({
   executeScroll,
   myRefAbout,
-  myRefRoadmap,
   myRefProjects,
+  myRefRoadmap,
   myRefContact,
 }) {
   const [menuButton, setMenuButton] = useState("");
@@ -39,17 +39,6 @@ function Header({
                   about
                 </span>
               </li>
-
-              <li>
-                <span
-                  className="nav-link"
-                  onClick={() => executeScroll(myRefRoadmap)}
-                  href="about-me"
-                >
-                  roadmap
-                </span>
-              </li>
-
               <li>
                 <span
                   className="nav-link"
@@ -57,6 +46,15 @@ function Header({
                   href="projects"
                 >
                   projects
+                </span>
+              </li>
+              <li>
+                <span
+                  className="nav-link"
+                  onClick={() => executeScroll(myRefRoadmap)}
+                  href="roadmap"
+                >
+                  roadmap
                 </span>
               </li>
               <li>

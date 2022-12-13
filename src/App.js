@@ -1,14 +1,14 @@
 import "./App.scss";
+import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
 
 import { useRef } from "react";
 
 function App() {
   const myRefAbout = useRef(null);
-  const myRefRoadmap = useRef(null);
   const myRefProjects = useRef(null);
+  const myRefRoadmap = useRef(null);
   const myRefContact = useRef(null);
 
   const executeScroll = (scrollToSection) =>
@@ -18,15 +18,15 @@ function App() {
     <>
       <Header
         myRefAbout={myRefAbout}
-        myRefRoadmap={myRefRoadmap}
         myRefProjects={myRefProjects}
+        myRefRoadmap={myRefRoadmap}
         myRefContact={myRefContact}
         executeScroll={executeScroll}
       />
       <Body
         myRefAbout={myRefAbout}
         myRefProjects={myRefProjects}
-        myRefContact={myRefContact}
+        myRefRoadmap={myRefRoadmap}
         executeScroll={executeScroll}
       />
       <Footer myRefContact={myRefContact} />

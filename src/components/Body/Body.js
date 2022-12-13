@@ -2,8 +2,9 @@ import "./Body.scss";
 import Me from "../../assets/images/BSTN-May-2022-Toront-CT-Headshot-31.jpg";
 import Techstack from "../Techstack/Techstack";
 import Projects from "../Projects/Projects";
+import Roadmap from "../Roadmap/Roadmap";
 
-export default function Body({ myRefAbout, myRefProjects }) {
+export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
   return (
     <>
       <main>
@@ -60,12 +61,16 @@ export default function Body({ myRefAbout, myRefProjects }) {
           </div>
         </section>
 
-        <section>
+        <section id="techstack">
           <Techstack />
         </section>
 
         <section id="projects" ref={myRefProjects}>
           <Projects />
+        </section>
+
+        <section id="roadmap" ref={myRefRoadmap}>
+          <Roadmap />
         </section>
       </main>
     </>
