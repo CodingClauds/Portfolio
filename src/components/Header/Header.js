@@ -87,6 +87,15 @@ function Header({
               about
             </span>
           </li>
+          <li className="menuItem" onClick={toggleMenu}>
+            <span
+              className="mobile-navlink"
+              onClick={() => executeScroll(myRefProjects)}
+              href="projects"
+            >
+              projects
+            </span>
+          </li>
 
           <li className="menuItem" onClick={toggleMenu}>
             <span
@@ -97,15 +106,7 @@ function Header({
               roadmap
             </span>
           </li>
-          <li className="menuItem" onClick={toggleMenu}>
-            <span
-              className="mobile-navlink"
-              onClick={() => executeScroll(myRefProjects)}
-              href="projects"
-            >
-              projects
-            </span>
-          </li>
+
           <li className="menuItem" onClick={toggleMenu}>
             <span
               className="mobile-navlink"
