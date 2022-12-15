@@ -4,7 +4,15 @@ import Techstack from "../Techstack/Techstack";
 import Projects from "../Projects/Projects";
 import Roadmap from "../Roadmap/Roadmap";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
+
 export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
+
   return (
     <>
       <main>
@@ -21,7 +29,7 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
           </div>
         </section>
 
-        <section className="about wrapper" id="about-me" ref={myRefAbout}>
+        <section className="about wrapper " id="about-me" ref={myRefAbout}>
           <div className="about__container">
             <div className="about__content">
               <div className="about__profile">
@@ -61,15 +69,15 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
           </div>
         </section>
 
-        <section id="techstack">
-          <Techstack />
+        <section id="techstack" data-Aos="fade-up">
+          <Techstack data-Aos="fade-in-out" />
         </section>
 
-        <section id="projects" ref={myRefProjects}>
+        <section id="projects" ref={myRefProjects} data-Aos="fade-in-out">
           <Projects />
         </section>
 
-        <section id="roadmap" ref={myRefRoadmap}>
+        <section id="roadmap" ref={myRefRoadmap} data-Aos="fade-in-out">
           <Roadmap />
         </section>
       </main>
