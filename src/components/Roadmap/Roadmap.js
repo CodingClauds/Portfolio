@@ -11,54 +11,56 @@ export default function Roadmap() {
                 {/* <h3 className="card-title">Road Map</h3> */}
                 <div id="content">
                   <ul className="timeline">
-                    <li className="event" data-date="12:30 - 1:00pm">
-                      <h3>Registration</h3>
+                    <li className="event" data-date="January 2015">
+                      <h3>Up and Onward</h3>
                       <p>
-                        Get here on time, it's first come first serve. Be late,
-                        get turned away.
+                        Started my career in industry working for Magna
+                        International. Having worked my way up from
+                        apprenticeship to licensed journeyman. Spent 5 years in
+                        heavy stamping for class-B products.
+                      </p>
+                      <br />
+                      <p>
+                        Moved into a different division within the company,
+                        trying to find my place in tech. Working directly in
+                        automation as a tier one supplier.
                       </p>
                     </li>
-                    <li className="event" data-date="2:30 - 4:00pm">
-                      <h3>Opening Ceremony</h3>
+
+                    <li className="event" data-date="April 2022">
+                      <h3>Grind Time</h3>
                       <p>
-                        Get ready for an exciting event, this will kick off in
-                        amazing fashion with MOP &amp; Busta Rhymes as an
-                        opening show.
+                        Took a step back after working now 7 years in
+                        manufacturing and decided to make major changes in my
+                        lifestyle. Decided to take some time to pursue coding in
+                        a more active approach. Having never been exposed to CS
+                        background.
                       </p>
                     </li>
-                    <li className="event" data-date="5:00 - 8:00pm">
-                      <h3>Main Event</h3>
+                    <li className="event" data-date="">
+                      <h3>Fail Hard & Learn Fast</h3>
                       <p>
-                        This is where it all goes down. You will compete head to
-                        head with your friends and rivals. Get ready!
+                        The most influential thing I learned in my
+                        apprenticeship were to make plenty of mistakes and learn
+                        from them. Not to bask in worry, or get too hung up over
+                        it. Take it as fuel for progression.
                       </p>
                     </li>
-                    <li className="event" data-date="8:30 - 9:30pm">
-                      <h3>Closing Ceremony</h3>
+                    <li className="event" data-date="">
+                      <h3>Treat Everyday with Opportunity</h3>
                       <p>
-                        See how is the victor and who are the losers. The big
-                        stage is where the winners bask in their own glory.
+                        Started getting familiar with the basics of web
+                        development and then went on and graduated
+                        BrainStations' 12 week boot-camp where I received my
+                        diploma.
                       </p>
                     </li>
-                    <li className="event" data-date="8:30 - 9:30pm">
-                      <h3>Closing Ceremony</h3>
+                    <li className="event" data-date="December 2022">
+                      <h3>Breaking into Tech</h3>
                       <p>
-                        See how is the victor and who are the losers. The big
-                        stage is where the winners bask in their own glory.
-                      </p>
-                    </li>
-                    <li className="event" data-date="8:30 - 9:30pm">
-                      <h3>Closing Ceremony</h3>
-                      <p>
-                        See how is the victor and who are the losers. The big
-                        stage is where the winners bask in their own glory.
-                      </p>
-                    </li>
-                    <li className="event" data-date="8:30 - 9:30pm">
-                      <h3>Closing Ceremony</h3>
-                      <p>
-                        See how is the victor and who are the losers. The big
-                        stage is where the winners bask in their own glory.
+                        Currently in the process of taking interviews, and
+                        searching for companies that align with my values and
+                        interests.
                       </p>
                     </li>
                   </ul>
