@@ -69,14 +69,12 @@ function Header({
             </ul>
           </nav>
           <button className={`hamburger ${hamburger}`} onClick={toggleMenu}>
-            {/* <button className="hamburger"> */}
             <div className="bar"></div>
           </button>
         </div>
       </header>
 
       <nav className={`mobile-nav ${menuButton}`}>
-        {/* <nav className="mobile-nav"> */}
         <ul className="mobile-nav__menu">
           <li className="menuItem" onClick={toggleMenu}>
             <span

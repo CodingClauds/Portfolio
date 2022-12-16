@@ -16,7 +16,7 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
   return (
     <>
       <main>
-        <section className="banner">
+        <section className="banner" data-Aos="fade-in">
           <div className="container wrapper">
             <h1>
               Websites you're <br />
@@ -69,15 +69,15 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
           </div>
         </section>
 
-        <section id="techstack" data-Aos="fade-up">
-          <Techstack data-Aos="fade-in-out" />
+        <section id="techstack" data-Aos="fade-left">
+          <Techstack />
         </section>
 
-        <section id="projects" ref={myRefProjects} data-Aos="fade-in-out">
+        <section id="projects" ref={myRefProjects} data-Aos="fade-up">
           <Projects />
         </section>
 
-        <section id="roadmap" ref={myRefRoadmap} data-Aos="fade-in-out">
+        <section id="roadmap" ref={myRefRoadmap} data-Aos="fade-in">
           <Roadmap />
         </section>
       </main>
