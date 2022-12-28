@@ -9,13 +9,11 @@ export default function Projects() {
       <div className="projects wrapper">
         <div className="container">
           <h2>Projects</h2>
-          <h3 className="projects__cta">Click to view my recent work:</h3>
 
           <section className="projects__grid">
             {projectCard.map(
               ({
                 id,
-                src,
                 textContent: { title, description },
                 button: { codeURL, demoURL },
               }) => {
@@ -25,7 +23,6 @@ export default function Projects() {
                       <div className="content__photocard">
                         <img
                           className="content__photocard-img"
-                          src={src}
                           alt="webapp homescreen snapshot"
                         />
                       </div>
