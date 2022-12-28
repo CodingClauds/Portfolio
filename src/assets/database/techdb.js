@@ -44,6 +44,7 @@ export const db = [
 export const projectCard = [
   {
     id: uuidv4(),
+    color: "violet",
     textContent: {
       title: "Horoscoped",
       description: "HTML | CSS | JS | APIs",
@@ -56,6 +57,7 @@ export const projectCard = [
   },
   {
     id: uuidv4(),
+    color: "yellow",
     textContent: {
       title: "F1 Flipcard",
       description: "JS | HTML | SCSS",
@@ -67,17 +69,7 @@ export const projectCard = [
   },
   {
     id: uuidv4(),
-    textContent: {
-      title: "Sproutr",
-      description: "React | JS | Firebase ",
-    },
-    button: {
-      demoURL: "https://sproutr.netlify.app/",
-      codeURL: "https://github.com/CodingClauds/sproutr-capstone",
-    },
-  },
-  {
-    id: uuidv4(),
+    color: "navy",
     textContent: {
       title: "DarkMode",
       description: "JS | HTML | SCSS",
@@ -89,6 +81,7 @@ export const projectCard = [
   },
   {
     id: uuidv4(),
+    color: "#FE4D7D",
     textContent: {
       title: "LogIn",
       description: "React | JS | SCSS ",
@@ -96,6 +89,18 @@ export const projectCard = [
     button: {
       demoURL: "https://consolelogin.netlify.app/",
       codeURL: "https://github.com/CodingClauds/React-Login",
+    },
+  },
+  {
+    id: uuidv4(),
+    color: "lightgreen",
+    textContent: {
+      title: "Sproutr",
+      description: "React | JS | Firebase ",
+    },
+    button: {
+      demoURL: "https://sproutr.netlify.app/",
+      codeURL: "https://github.com/CodingClauds/sproutr-capstone",
     },
   },
 ];
