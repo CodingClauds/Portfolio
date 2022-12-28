@@ -8,7 +8,6 @@ export default function Roadmap() {
           <div className="col-md-12">
             <div className="card">
               <div className="card-body">
-                {/* <h3 className="card-title">Road Map</h3> */}
                 <div id="content">
                   <ul className="timeline">
                     <li className="event" data-date="January 2015">
@@ -27,7 +26,7 @@ export default function Roadmap() {
                       </p>
                     </li>
 
-                    <li className="event" data-date="April 2022">
+                    <li className="event" data-date="November 2021">
                       <h3>Grind Time</h3>
                       <p>
                         Took a step back after working now 7 years in
@@ -37,7 +36,7 @@ export default function Roadmap() {
                         background.
                       </p>
                     </li>
-                    <li className="event" data-date="">
+                    <li className="event" data-date="April 2022">
                       <h3>Fail Hard & Learn Fast</h3>
                       <p>
                         The most influential thing I learned in my
@@ -45,14 +44,21 @@ export default function Roadmap() {
                         from them. Not to bask in worry, or get too hung up over
                         it. Take it as fuel for progression.
                       </p>
-                    </li>
-                    <li className="event" data-date="">
+                      <br />
                       <h3>Treat Everyday with Opportunity</h3>
                       <p>
-                        Started getting familiar with the basics of web
-                        development and then went on and graduated
-                        BrainStations' 12 week boot-camp where I received my
-                        diploma.
+                        After months of self learning and becoming familiar with
+                        the basics of web development. I then went on to pursue
+                        BrainStations' boot-camp and graduated 12 weeks later.
+                      </p>
+                    </li>
+                    <li className="event" data-date="November 2022">
+                      <h3>Exposure</h3>
+                      <p>
+                        Post-bootcamp, I realized that meeting people in
+                        industry would be essential to my success. I started off
+                        by going to TechTo events and then further volunteering
+                        at WebSubmit in Lisbon for the week.
                       </p>
                     </li>
                     <li className="event" data-date="December 2022">
