@@ -18,14 +18,6 @@ import TerminalIcon from "../images/techstack/terminal.png";
 import ApiIcon from "../images/techstack/api.png";
 import NetlifyIcon from "../images/techstack/netlify.svg";
 
-// Projects assets
-import Horoscope from "../images/projects/horoscope.png";
-import Sproutr from "../images/projects/sproutr.png";
-import F1 from "../images/projects/f1stopwatch.png";
-import DarkMode from "../images/projects/dark-light-mode.png";
-import Login from "../images/projects/login.png";
-// import Maesurf from "../images/projects/maesurf.png";
-
 const { v4: uuidv4 } = require("uuid");
 
 export const db = [
@@ -52,7 +44,6 @@ export const db = [
 export const projectCard = [
   {
     id: uuidv4(),
-    src: Horoscope,
     textContent: {
       title: "Horoscoped",
       description: "HTML | CSS | JS | APIs",
@@ -65,7 +56,6 @@ export const projectCard = [
   },
   {
     id: uuidv4(),
-    src: F1,
     textContent: {
       title: "F1 Flipcard",
       description: "JS | HTML | SCSS",
@@ -77,7 +67,6 @@ export const projectCard = [
   },
   {
     id: uuidv4(),
-    src: Sproutr,
     textContent: {
       title: "Sproutr",
       description: "React | JS | Firebase ",
@@ -89,7 +78,6 @@ export const projectCard = [
   },
   {
     id: uuidv4(),
-    src: DarkMode,
     textContent: {
       title: "DarkMode",
       description: "JS | HTML | SCSS",
@@ -99,19 +87,8 @@ export const projectCard = [
       codeURL: "https://github.com/CodingClauds/Dark-light-Mode-StopWatch",
     },
   },
-  // {
-  //   src: Maesurf,
-  //   textContent: {
-  //     title: "Maesurf Co.",
-  //     description: "WordPress | PHP ",
-  //   },
-  //   button: {
-  //     demoURL: "https://maesurf.com/",
-  //   },
-  // },
   {
     id: uuidv4(),
-    src: Login,
     textContent: {
       title: "LogIn",
       description: "React | JS | SCSS ",
