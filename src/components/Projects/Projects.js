@@ -14,11 +14,17 @@ export default function Projects() {
             {projectCard.map(
               ({
                 id,
+                color,
                 textContent: { title, description },
                 button: { codeURL, demoURL },
               }) => {
                 return (
-                  <div className="project" key={id} data-aos="fade-right">
+                  <div
+                    className="project"
+                    key={id}
+                    data-aos="fade-right"
+                    style={{ borderTop: `5px solid ${color}` }}
+                  >
                     <div className="content">
                       <div className="content__photocard">
                         <img
