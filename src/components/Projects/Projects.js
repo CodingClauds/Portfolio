@@ -18,7 +18,7 @@ export default function Projects() {
                 button: { codeURL, demoURL },
               }) => {
                 return (
-                  <div className="project" key={id}>
+                  <div className="project" key={id} data-aos="fade-right">
                     <div className="content">
                       <div className="content__photocard">
                         <img

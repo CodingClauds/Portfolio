@@ -69,11 +69,11 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
           </div>
         </section>
 
-        <section id="techstack" data-aos="fade-right">
+        <section id="techstack">
           <Techstack />
         </section>
 
-        <section id="projects" ref={myRefProjects} data-aos="fade-in">
+        <section id="projects" ref={myRefProjects}>
           <Projects />
         </section>
 

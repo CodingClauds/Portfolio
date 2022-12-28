@@ -16,6 +16,7 @@ export default function Techstack() {
                 src={src}
                 alt="techstack badge"
                 className="techstack__icon"
+                data-aos="fade-right"
               />
             </div>
           );
