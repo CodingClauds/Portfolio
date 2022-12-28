@@ -69,7 +69,7 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
           </div>
         </section>
 
-        <section id="techstack" data-aos="fade-left">
+        <section id="techstack" data-aos="fade-right">
           <Techstack />
         </section>
 
