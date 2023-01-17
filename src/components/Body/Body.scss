@@ -1,4 +1,4 @@
-@use "../../styles/partials/_mixins.scss" as *;
+@use "../../styles/partials/_mixIns.scss" as *;
 @use "../../styles/partials/_variables.scss" as *;
 
 main {
@@ -47,7 +47,6 @@ main {
       }
 
       h3 {
-        font-size: 36px;
         font-weight: 700;
         margin-bottom: 32px;
 
@@ -57,46 +56,191 @@ main {
       }
     }
 
-    .infinite {
-      display: inline-block;
-
-      &__title {
-        padding: 0;
-        margin: 0;
-        color: $primary-white;
-        font-size: 60px;
-        letter-spacing: 1px;
-      }
+    .type-title {
+      font-size: 2.5rem;
+      margin: 4rem 0 1rem 0rem;
     }
 
-    .typewriter h3 {
-      color: $primary-white;
-      overflow: hidden; /* Ensures the content is not revealed until the animation */
-      border-right: 0.15em solid orange; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-      letter-spacing: 0.18em; /* Adjust as needed */
-      animation: typing 3s steps(38, end), blink-caret 0.5s step-end infinite;
-    }
-
-    /* The typing effect */
+    /* Typewriter effect */
     @keyframes typing {
-      from {
-        width: 0;
+      0.0000%,
+      27.3488% {
+        content: "";
       }
-      to {
-        width: 100%;
+      1.1395%,
+      26.2093% {
+        content: "D";
+      }
+      2.2791%,
+      25.0698% {
+        content: "De";
+      }
+      3.4186%,
+      23.9302% {
+        content: "Dev";
+      }
+      4.5581%,
+      22.7907% {
+        content: "Deve";
+      }
+      5.6977%,
+      21.6512% {
+        content: "Devel";
+      }
+      6.8372%,
+      20.5116% {
+        content: "Develo";
+      }
+      7.9767%,
+      19.3721% {
+        content: "Develop";
+      }
+      8.9767%,
+      18.3721% {
+        content: "Develop.";
+      }
+
+      30.7674%,
+      51.2791% {
+        content: "";
+      }
+      31.9070%,
+      50.1395% {
+        content: "C";
+      }
+      33.0465%,
+      49.0000% {
+        content: "Cr";
+      }
+      34.1860%,
+      47.8605% {
+        content: "Cre";
+      }
+      35.3256%,
+      46.7209% {
+        content: "Crea";
+      }
+      36.4651%,
+      45.5814% {
+        content: "Creat";
+      }
+      37.6047%,
+      44.4419% {
+        content: "Create";
+      }
+      38.6047%,
+      43.4419% {
+        content: "Create.";
+      }
+
+      54.6977%,
+      75.2093% {
+        content: "";
+      }
+      55.8372%,
+      74.0698% {
+        content: "I";
+      }
+      56.9767%,
+      72.9302% {
+        content: "In";
+      }
+      58.1163%,
+      71.7907% {
+        content: "Ins";
+      }
+      59.2558%,
+      70.6512% {
+        content: "Insp";
+      }
+      60.3953%,
+      69.5116% {
+        content: "Inspi";
+      }
+      61.5349%,
+      68.3721% {
+        content: "Inspir";
+      }
+      62.6574%,
+      67.8210% {
+        content: "Inspire";
+      }
+
+      78.6279%,
+      96.8605% {
+        content: "";
+      }
+      79.7674%,
+      95.7209% {
+        content: "D";
+      }
+      80.9070%,
+      94.5814% {
+        content: "Dr";
+      }
+      82.0465%,
+      93.4419% {
+        content: "Dre";
+      }
+      83.1860%,
+      92.3023% {
+        content: "Drea";
+      }
+      85.1860%,
+      90.3023% {
+        content: "Dream";
       }
     }
 
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
-      from,
-      to {
-        border-color: transparent;
+    @keyframes blink {
+      0%,
+      100% {
+        opacity: 1;
       }
       50% {
-        border-color: orange;
+        opacity: 0;
+      }
+    }
+
+    .typewriter {
+      --caret: orange;
+    }
+
+    .typewriter::before {
+      content: "";
+      animation: typing 13.5s infinite;
+    }
+
+    .typewriter::after {
+      content: "";
+      border-right: 3px solid var(--caret);
+      animation: blink 0.5s linear infinite;
+    }
+
+    @media (prefers-reduced-motion) {
+      .typewriter::after {
+        animation: none;
+      }
+
+      @keyframes sequencePopup {
+        0%,
+        100% {
+          content: "Develop";
+        }
+        25% {
+          content: "Create";
+        }
+        50% {
+          content: "Inspire";
+        }
+        75% {
+          content: "Dream";
+        }
+      }
+
+      .typewriter::before {
+        content: "Develop";
+        animation: sequencePopup 12s linear infinite;
       }
     }
   }

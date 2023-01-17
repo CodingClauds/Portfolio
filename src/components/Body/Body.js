@@ -22,9 +22,10 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
               Websites you're <br />
               <span>not afraid</span> to share
             </h1>
-
-            <div className="infinite typewriter">
-              <h3 className="infinite__title">Let's Develop.</h3>
+            <div>
+              <h3 class="type-title" aria-label="typewriter effect">
+                Let's &nbsp;<span class="typewriter nocaret"></span>
+              </h3>
             </div>
           </div>
         </section>
