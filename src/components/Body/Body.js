@@ -2,7 +2,7 @@ import "./Body.scss";
 import Me from "../../assets/images/BSTN-May-2022-Toront-CT-Headshot-31.jpg";
 import Techstack from "../Techstack/Techstack";
 import Projects from "../Projects/Projects";
-import Roadmap from "../Roadmap/Roadmap";
+// import Roadmap from "../Roadmap/Roadmap";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -78,9 +78,9 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
           <Projects />
         </section>
 
-        <section id="roadmap" ref={myRefRoadmap} data-aos="fade-in">
+        {/* <section id="roadmap" ref={myRefRoadmap} data-aos="fade-in">
           <Roadmap />
-        </section>
+        </section> */}
       </main>
     </>
   );
