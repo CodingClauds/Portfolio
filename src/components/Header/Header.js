@@ -5,7 +5,7 @@ function Header({
   executeScroll,
   myRefAbout,
   myRefProjects,
-  myRefRoadmap,
+  // myRefRoadmap,
   myRefContact,
 }) {
   const [menuButton, setMenuButton] = useState("");
@@ -48,7 +48,7 @@ function Header({
                   projects
                 </span>
               </li>
-              <li>
+              {/* <li>
                 <span
                   className="nav-link"
                   onClick={() => executeScroll(myRefRoadmap)}
@@ -56,7 +56,7 @@ function Header({
                 >
                   roadmap
                 </span>
-              </li>
+              </li> */}
               <li>
                 <span
                   className="nav-link"
@@ -95,7 +95,7 @@ function Header({
             </span>
           </li>
 
-          <li className="menuItem" onClick={toggleMenu}>
+          {/* <li className="menuItem" onClick={toggleMenu}>
             <span
               className="mobile-navlink"
               onClick={() => executeScroll(myRefRoadmap)}
@@ -103,7 +103,7 @@ function Header({
             >
               roadmap
             </span>
-          </li>
+          </li> */}
 
           <li className="menuItem" onClick={toggleMenu}>
             <span

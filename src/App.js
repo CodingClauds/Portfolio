@@ -26,7 +26,7 @@ function App() {
       <Body
         myRefAbout={myRefAbout}
         myRefProjects={myRefProjects}
-        myRefRoadmap={myRefRoadmap}
+        // myRefRoadmap={myRefRoadmap}
         executeScroll={executeScroll}
       />
       <Footer myRefContact={myRefContact} />
