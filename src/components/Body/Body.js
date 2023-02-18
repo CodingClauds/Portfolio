@@ -23,8 +23,8 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
               <span>not afraid</span> to share
             </h1>
             <div>
-              <h3 class="type-title" aria-label="typewriter effect">
-                Let's &nbsp;<span class="typewriter nocaret"></span>
+              <h3 className="type-title" aria-label="typewriter effect">
+                Let's &nbsp;<span className="typewriter nocaret"></span>
               </h3>
             </div>
           </div>
