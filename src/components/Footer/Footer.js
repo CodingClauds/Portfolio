@@ -10,9 +10,7 @@ export default function Footer({ myRefContact }) {
     <>
       <footer className="contact" id="contact" ref={myRefContact}>
         <div className="contact__container wrapper">
-          <h2 className="contact__title">
-            <span className="contact__borderbottom">let's</span> connect
-          </h2>
+          <h2 className="contact__title">let's connect</h2>
           <div className="contact__social">
             <a
               className="contact__link"
@@ -38,7 +36,7 @@ export default function Footer({ myRefContact }) {
           <div className="site-footer-divider"></div>
 
           <div className="contact__acknowledgements">
-            <span className="contact__copyright">
+            <span className="contact__subtext">
               Claudio Miranda © <span id="copyright-year">{today}</span>
             </span>
           </div>
