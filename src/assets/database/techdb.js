@@ -13,13 +13,15 @@ import YarnIcon from "../images/techstack/yarn.svg";
 import JiraIcon from "../images/techstack/jira.svg";
 import FigmaIcon from "../images/techstack/figma.svg";
 import ExpressIcon from "../images/techstack/expressjs.svg";
-import NodeIcon from "../images/techstack/node.svg";
+import NodeIcon from "../images/techstack/node.png";
 import TerminalIcon from "../images/techstack/terminal.png";
 import ApiIcon from "../images/techstack/api.png";
 import NetlifyIcon from "../images/techstack/netlify.svg";
+import BlueHostIcon from "../images/techstack/bluehost-icon.png";
 
 const { v4: uuidv4 } = require("uuid");
 
+// Logo Imports w/ ID's
 export const db = [
   { id: uuidv4(), src: ReactIcon },
   { id: uuidv4(), src: HtmlIcon },
@@ -39,8 +41,10 @@ export const db = [
   { id: uuidv4(), src: NetlifyIcon },
   { id: uuidv4(), src: TerminalIcon },
   { id: uuidv4(), src: GithubIcon },
+  { id: uuidv4(), src: BlueHostIcon },
 ];
 
+// Project Card Content w/ ID's
 export const projectCard = [
   {
     id: uuidv4(),
