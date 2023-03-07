@@ -1,13 +1,7 @@
 import "./Header.scss";
 import { useState } from "react";
 
-function Header({
-  executeScroll,
-  myRefAbout,
-  myRefProjects,
-  // myRefRoadmap,
-  myRefContact,
-}) {
+function Header({ executeScroll, myRefAbout, myRefProjects, myRefContact }) {
   const [menuButton, setMenuButton] = useState("");
   const [hamburger, setIsHamburgerActive] = useState("");
 
