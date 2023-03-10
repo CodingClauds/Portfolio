@@ -37,7 +37,8 @@ export default function Footer({ myRefContact }) {
 
           <div className="contact__acknowledgements">
             <span className="contact__subtext">
-              Claudio Miranda © <span id="copyright-year">{today}</span>
+              Made with ❤️ by Claudio Miranda{" - "}
+              <span id="copyright-year">{today}</span>
             </span>
           </div>
         </div>
