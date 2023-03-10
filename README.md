@@ -18,7 +18,7 @@ Database:
 I decided to create a database folder that would hold and store all of my files, which includes ever growing techstack and project cards that I imported and then map over to display.
 
 Functionality:
-Utilzied a library (Scroll Animation Library; AOS - Link above 🔝) for my animations to fade in and out, as the user scrolls down the page. It is infinite, so it does reset when the user moves out of view.
+Utilzied a library (Scroll Animation Library; AOS - Link above 🆙) for my animations to fade in and out, as the user scrolls down the page. It is infinite, so it does reset when the user moves out of view.
 
 Projects:
 Here are a few projects I have worked on, currently looking to come back to some of these and do some codebase organization as needed.
