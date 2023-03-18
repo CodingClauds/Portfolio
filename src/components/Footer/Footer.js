@@ -1,10 +1,25 @@
 import "./Footer.scss";
-import github from "../../assets/images/social-icons/github-white.svg";
-import linkedin from "../../assets/images/social-icons/linkedin-white.svg";
-import email from "../../assets/images/social-icons/email-white.png";
+import githubIcon from "../../assets/images/social-icons/github-white.svg";
+import linkedinIcon from "../../assets/images/social-icons/linkedin-white.svg";
+import emailIcon from "../../assets/images/social-icons/email-white.png";
+import resumeIcon from "../../assets/images/social-icons/resume.png";
 
 export default function Footer({ myRefContact }) {
   const today = new Date().getFullYear();
+
+  const downloadPDF = () => {
+    fetch("resume-claudio-miranda.pdf").then((res) => {
+      res.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "resume-claudio-miranda.pdf";
+        alink.click();
+      });
+    });
+  };
 
   return (
     <>
@@ -18,19 +33,34 @@ export default function Footer({ myRefContact }) {
             >
               <img
                 className="contact__handle"
-                src={linkedin}
+                src={linkedinIcon}
                 alt="linkedin icon"
               />
             </a>
             <a className="contact__link" href="https://github.com/CodingClauds">
-              <img className="contact__handle" src={github} alt="github icon" />
+              <img
+                className="contact__handle"
+                src={githubIcon}
+                alt="github icon"
+              />
             </a>
             <a
               className="contact__link"
               href="mailto:claudio.000.miranda@gmail.com"
             >
-              <img className="contact__handle" src={email} alt="email icon" />
+              <img
+                className="contact__handle"
+                src={emailIcon}
+                alt="email icon"
+              />
             </a>
+            <button className="contact__link" onClick={downloadPDF}>
+              <img
+                className="contact__handle"
+                src={resumeIcon}
+                alt="Resume Icon"
+              />
+            </button>
           </div>
 
           <div className="site-footer-divider"></div>
