@@ -18,6 +18,7 @@ import TerminalIcon from "../images/techstack/terminal.png";
 import ApiIcon from "../images/techstack/api.png";
 import NetlifyIcon from "../images/techstack/netlify.svg";
 import BlueHostIcon from "../images/techstack/bluehost-icon.png";
+import mySql from "../images/techstack/MySQL-Logo.wine.svg";
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -36,12 +37,13 @@ export const db = [
   { id: uuidv4(), src: RouterIcon },
   { id: uuidv4(), src: ApiIcon },
   { id: uuidv4(), src: FirebaseIcon },
+  { id: uuidv4(), src: mySql },
+  { id: uuidv4(), src: BlueHostIcon },
   { id: uuidv4(), src: JiraIcon },
   { id: uuidv4(), src: FigmaIcon },
   { id: uuidv4(), src: NetlifyIcon },
   { id: uuidv4(), src: TerminalIcon },
   { id: uuidv4(), src: GithubIcon },
-  { id: uuidv4(), src: BlueHostIcon },
 ];
 
 // Project Card Content w/ ID's
