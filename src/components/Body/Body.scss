@@ -12,6 +12,7 @@ main {
     background-image: url("../../assets/images/background.jpg");
     background-position: left;
     background-size: cover;
+    background-attachment: fixed;
 
     &:after {
       content: "";
