@@ -47,6 +47,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 0 1rem;
 
     @include tablet {
       padding: 0 3rem;
@@ -54,10 +55,10 @@
   }
 
   &__handle {
-    width: 3.5rem;
+    width: 2.5rem;
 
     @include tablet {
-      width: 4rem;
+      width: 3.5rem;
     }
   }
 
