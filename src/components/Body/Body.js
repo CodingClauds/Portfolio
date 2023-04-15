@@ -43,11 +43,11 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
               <div className="about__content--text">
                 <div className="about__description">
                   <p className="about__inner-text">
-                    Hello, my name is Claudio! I decided to pivot into tech and
-                    take the plunge after 7 years in the automotive industry.
-                    Working as a registered tool-maker for one of the major OEM
-                    direct suppliers, I narrowed down into robotics and
-                    automation.
+                    Hello, my name's Claudio! I decided to pivot into tech and
+                    take the plunge after 8 years in the automotive industry.
+                    Working as a licensed tool-maker for one of the major OEM
+                    direct suppliers, I have since narrowed myself down into
+                    robotics and automation.
                   </p>
                   <p className="about__inner-text">
                     This was where I got my first taste for programming and
@@ -62,7 +62,7 @@ export default function Body({ myRefAbout, myRefProjects, myRefRoadmap }) {
                     I have a love for languages.. learning to understand both
                     human and machine. When I am not at my desk you can catch me
                     biking around in the sun, rock climbing or cooking away for
-                    friends while listening for the next local eats.
+                    friends while listening in for the next local eats.
                   </p>
                 </div>
               </div>
